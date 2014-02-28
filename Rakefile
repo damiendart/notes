@@ -3,6 +3,9 @@ require "bundler/setup"
 require "yaml"
 Bundler.require(:default)
 
+Haml::Filters::Scss.options[:cache] = false
+Haml::Filters::Scss.options[:style] = :compressed
+
 CLOBBER.include(FileList["*.html"])
 task :default => FileList["*.markdown"].map { |file| 
     File.basename(file, ".markdown") + ".html" }
