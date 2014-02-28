@@ -7,10 +7,10 @@ Haml::Filters::Scss.options[:cache] = false
 Haml::Filters::Scss.options[:style] = :compressed
 
 CLOBBER.include(FileList["*.html"])
-task :default => FileList["*.markdown"].map { |file| 
+task :default => FileList["*.markdown"].map { |file|
     File.basename(file, ".markdown") + ".html" }
 
-FileList["*.markdown"].map { |file| 
+FileList["*.markdown"].map { |file|
     File.basename(file, ".markdown") }.each do |document_basename|
   desc "Spit out \"#{document_basename}.html\"."
   file "#{document_basename}.html" =>
@@ -28,7 +28,7 @@ FileList["*.markdown"].map { |file|
     content.xpath("ul[1]")[0].add_child(last_update_html)
     output = Haml::Engine.new(File.read("template.haml"), {:format => :html5,
         :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
-        {:author => content.xpath("ul[1]/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1], 
+        {:author => content.xpath("ul[1]/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
         :title => content.xpath("h1")[0].content,
         :content => content.to_html })
     output = output.gsub(/^[\s]*$\n/, "")
