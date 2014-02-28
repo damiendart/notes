@@ -17,13 +17,20 @@ FileList["*.markdown"].map { |file|
       FileList["#{document_basename}.markdown"] +
       FileList["template.*"] do |task|
     puts "# Spitting out \"#{task.name}\"."
-    content = Redcarpet::Render::SmartyPants.render(
+    content = Nokogiri::HTML.fragment(Redcarpet::Render::SmartyPants.render(
         Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
-        File.read("#{document_basename}.markdown")))
-    title = Nokogiri::HTML(content).xpath("//h1")[0].content
+        File.read("#{document_basename}.markdown"))))
+    last_update_html = Nokogiri::XML::Node.new("li", content)
+    last_update_html.inner_html = "Last Updated: " +
+        "<a href=\"https://github.com/damiendart/notes/commit/" +
+        `git log -n 1 --pretty=format:%H -- #{document_basename}.markdown` + "\">" +
+        `git log -n 1 --pretty=format:%aD -- #{document_basename}.markdown` + "</a>"
+    content.xpath("ul[1]")[0].add_child(last_update_html)
     output = Haml::Engine.new(File.read("template.haml"), {:format => :html5,
         :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
-        {:title => title, :content => content})
+        {:author => content.xpath("ul[1]/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1], 
+        :title => content.xpath("h1")[0].content,
+        :content => content.to_html })
     output = output.gsub(/^[\s]*$\n/, "")
     output = output.gsub(%r{^\s*//.*\n}, "")
     File.open(task.name, "w") do |file|
