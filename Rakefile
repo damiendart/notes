@@ -8,12 +8,12 @@ Haml::Filters::Scss.options[:style] = :compressed
 
 CLOBBER.include(FileList["*.html"])
 task :default => FileList["*.markdown"].map { |file|
-    File.basename(file, ".markdown") + ".html" }
+    File.basename(file, ".markdown") + "-notes.html" }
 
 FileList["*.markdown"].map { |file|
     File.basename(file, ".markdown") }.each do |document_basename|
   desc "Spit out \"#{document_basename}.html\"."
-  file "#{document_basename}.html" =>
+  file "#{document_basename}-notes.html" =>
       FileList["#{document_basename}.markdown"] +
       FileList["template.*"] do |task|
     puts "# Spitting out \"#{task.name}\"."
