@@ -6,11 +6,11 @@ Photoshop Notes
 [1]: <http://www.robotinaponcho.net>
 
 
-Creating A Photoshop Brush for Doodling
----------------------------------------
+Creating Custom Photoshop Brushes
+---------------------------------
 
 The following recipe will give you a basic Photoshop brush that's a
-little better than the presets for doodling and screwing around.
+little better than the presets for colouring and doodling around.
 
   - Select the _Hard Round Pressure Size_ brush preset to start with.
   - In the _Brush Tip Shape_ panel:
@@ -19,7 +19,7 @@ little better than the presets for doodling and screwing around.
     - the spacing to 1%.
   - In the _Shape Dynamics_ panel:
     - Set the minimum diameter to 20%, and
-    - set the angle jitter to be determined by the initial direction.
+    - set the angle jitter to be determined by the direction.
   - In the _Texture_ panel:
     - Set the texture to anything, it doesn't matter.
     - Then set the scale to 100%,
