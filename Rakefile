@@ -1,3 +1,5 @@
+# Converts Markdown-formatted notes into HTML documents.
+
 require "rubygems"
 require "bundler/setup"
 require "yaml"
@@ -13,9 +15,8 @@ task :default => FileList["*.markdown"].map { |file|
 FileList["*.markdown"].map { |file|
     File.basename(file, ".markdown") }.each do |document_basename|
   desc "Spit out \"#{document_basename}.html\"."
-  file "#{document_basename}-notes.html" =>
-      FileList["#{document_basename}.markdown"] +
-      FileList["template.*"] do |task|
+  file "#{document_basename}-notes.html" => FileList["Rakefile",
+      "#{document_basename}.markdown", "template.*"] do |task|
     puts "# Spitting out \"#{task.name}\"."
     content = Nokogiri::HTML.fragment(Redcarpet::Render::SmartyPants.render(
         Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
