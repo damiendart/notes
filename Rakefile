@@ -1,4 +1,6 @@
 # Converts Markdown-formatted notes into HTML documents.
+#
+# TODO: Document note format.
 
 require "rubygems"
 require "bundler/setup"
