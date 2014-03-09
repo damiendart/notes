@@ -1,6 +1,10 @@
 # Converts Markdown-formatted notes into HTML documents.
 #
 # TODO: Document note format.
+#
+# This file was written by Damien Dart, <damiendart@pobox.com>. This is
+# free and unencumbered software released into the public domain. For
+# more information, please refer to the accompanying "UNLICENCE" file.
 
 require "rubygems"
 require "bundler/setup"
@@ -29,7 +33,9 @@ FileList["*.markdown"].map { |file|
           "<a href=\"https://github.com/damiendart/notes/commit/" +
           `git log -n 1 --pretty=format:%H #{document_basename}.markdown` + "\">" +
           `git log -n 1 --pretty=format:%aD #{document_basename}.markdown` + "</a>"
-      content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
+      # The following XPath mess is a crummy attempt at keeping the
+      # metadata list in alphabetical order.
+      content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].add_next_sibling(last_update_html)
     end
     output = Haml::Engine.new(File.read("template.haml"), {:format => :html5,
         :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
