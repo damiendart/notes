@@ -33,10 +33,11 @@ FileList["*.markdown"].map { |file|
           "<a href=\"https://github.com/damiendart/notes/commit/" +
           `git log -n 1 --pretty=format:%H #{document_basename}.markdown` + "\">" +
           `git log -n 1 --pretty=format:%aD #{document_basename}.markdown` + "</a>"
-      # The following XPath mess is a crummy attempt at keeping the
-      # metadata list in alphabetical order.
-      content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].add_next_sibling(last_update_html)
+      content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
+    content.xpath("h1/following::ul[1]/li").sort_by { |item|
+      item.content }.each { |node|
+      node.parent = content.xpath("h1/following::ul")[0] }
     output = Haml::Engine.new(File.read("template.haml"), {:format => :html5,
         :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
         {:author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
