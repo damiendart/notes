@@ -12,7 +12,7 @@ Creating Custom Photoshop Brushes
 ---------------------------------
 
 The following recipe will give you a basic Photoshop brush that's a
-little better than the presets for colouring and doodling around.
+little better than the presets for colouring and line-art.
 
   - Select the _Hard Round Pressure Size_ brush preset to start with.
   - In the _Brush Tip Shape_ panel:
@@ -29,3 +29,5 @@ little better than the presets for colouring and doodling around.
       _Height_, and
     - set the depth to 100%.
   - Ensure _Smoothing_ is enabled.
+
+I mainly use this brush at size 45 when drawing on an A4-sized document.
