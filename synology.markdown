@@ -13,5 +13,5 @@ Miscellaneous Things
 
   - The Task Scheduler control panel in DSM doesn't give any indication
     as to whether a task's last run failed or succeeded. Running the
-    command `synoschedtask --get` provides a little more information,
-    including tasks' last run statuses.
+    command `synoschedtask --get` provides more information about tasks,
+    including their last run statuses.
