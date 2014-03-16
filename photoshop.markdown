@@ -12,7 +12,7 @@ Creating Custom Photoshop Brushes
 ---------------------------------
 
 The following recipe will give you a Photoshop brush that's more suited
-for colouring and line-art than the default presets.  
+for colouring and line-art than the default presets.
 
   - In the _Brush_ panel select the _Hard Round Pressure Size_ preset.
   - In the _Brush Tip Shape_ options set:
