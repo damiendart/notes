@@ -37,3 +37,10 @@ the brush tool, which isn't necessary if using the pencil tool.
 I use this brush with the pencil tool at size 40 when drawing on an
 A4-sized document with a resolution of 300 pixels per inch. Adjust the
 brush size accordingly when changing document resolution.
+
+
+Miscellaneous Things
+--------------------
+
+  - When using a Wacom tablet, I generally set the tip feel to one notch
+    below firm. I'll need to play around with this, though.
