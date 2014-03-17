@@ -34,7 +34,7 @@ for colouring and line-art than the default presets.
 The settings in the _Texture_ panel give a faux-aliasing effect if using
 the brush tool, which isn't necessary if using the pencil tool.
 
-I use this brush with the pencil tool at size 40 when drawing on an
+I use this brush with the pencil tool at size 20 when drawing on an
 A4-sized document with a resolution of 300 pixels per inch. Adjust the
 brush size accordingly when changing document resolution.
 
