@@ -16,13 +16,10 @@ for colouring and line-art than the default presets.
 
   - In the _Brush_ panel select the _Hard Round Pressure Size_ preset.
   - In the _Brush Tip Shape_ options set:
-    - Set the angle to 45%,
-    - set the roundness to 75%,
-    - hardness to 100%, and
+    - hardness to 0%, and
     - the spacing to 1%.
   - In the _Shape Dynamics_ options set:
-    - Set the minimum diameter to 20%, and
-    - set the angle jitter to be determined by the direction.
+    - Set the minimum diameter to 20%.
   - If using the brush tool, in the _Texture_ options set:
     - Set the texture to anything, it doesn't matter.
     - Then set the scale to 100%,
@@ -34,9 +31,9 @@ for colouring and line-art than the default presets.
 The settings in the _Texture_ panel give a faux-aliasing effect if using
 the brush tool, which isn't necessary if using the pencil tool.
 
-I use this brush with the pencil tool at size 20 when drawing on an
-A4-sized document with a resolution of 300 pixels per inch. Adjust the
-brush size accordingly when changing document resolution.
+I use this brush with the pencil tool at sizes 10 and 20 when drawing on
+an A4-sized document with a resolution of 300 pixels per inch. Adjust
+the brush size accordingly when changing document resolution.
 
 
 Miscellaneous Things
