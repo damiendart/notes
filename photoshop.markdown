@@ -11,17 +11,20 @@ Photoshop Notes
 Creating Custom Photoshop Brushes
 ---------------------------------
 
-The following recipe will give you a Photoshop brush that's more suited
-for colouring and line-art than the default presets.
+The following recipe takes one of the default brush presets and tweaks
+it to create one that is more suited towards illustration work. A
+graphics tablet is required.
 
+  - Select either the brush or pencil tool.
   - In the _Brush_ panel select the _Hard Round Pressure Size_ preset.
   - In the _Brush Tip Shape_ options set:
-    - hardness to 0%, and
-    - the spacing to 1%.
+    - set the hardness to 0%, and
+    - set the spacing to 1%.
   - In the _Shape Dynamics_ options set:
-    - Set the minimum diameter to 20%.
+    - Set the size jitter control to _Pen Pressure_, and
+    - set the minimum diameter to 20%.
   - If using the brush tool, in the _Texture_ options set:
-    - Set the texture to anything, it doesn't matter.
+    - Set the texture to any of the presets, it doesn't matter.
     - Then set the scale to 100%,
     - ensure _Texture Each Tip_ is enabled and the mode is set to
       _Height_, and
@@ -29,9 +32,9 @@ for colouring and line-art than the default presets.
   - Ensure _Smoothing_ is enabled.
 
 The settings in the _Texture_ panel give a faux-aliasing effect if using
-the brush tool, which isn't necessary if using the pencil tool.
+the brush tool. This isn't necessary if using the pencil tool.
 
-I use this brush with the pencil tool at sizes 10 and 20 when drawing on
+I use this brush with the pencil tool at size 20 when drawing on
 an A4-sized document with a resolution of 300 pixels per inch. Adjust
 the brush size accordingly when changing document resolution.
 
