@@ -32,7 +32,11 @@ graphics tablet is required.
   - Ensure _Smoothing_ is enabled.
 
 The settings in the _Texture_ panel give a faux-aliasing effect if using
-the brush tool. This isn't necessary if using the pencil tool.
+the brush tool. This isn't necessary if using the pencil tool. [Remember
+to work at high document resolutions when working with aliased brushes
+for better results][3].
+
+[3]: <http://fox-orian.tumblr.com/post/31595044234>
 
 I use this brush with the pencil tool at size 20 when drawing on
 an A4-sized document with a resolution of 300 pixels per inch. Adjust
