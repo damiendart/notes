@@ -1,4 +1,10 @@
 Damien's Notes
 ==============
 
-A bunch of notes and a janky publish-to-HTML script.
+A bunch of notes about stuff and a janky publish-to-HTML script.
+
+After installing any dependencies with `bundle install`, generating HTML
+versions of my notes is a simple `rake` command away. Someday I'll get
+round to documenting the note format.
+
+-- Damien
