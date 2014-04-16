@@ -51,6 +51,14 @@ h2 {
 p {
   margin: em($base-line-height / 2, $base-font-size) 0 0 0; }
 
+ol {
+  margin: em($base-line-height / 2, $base-font-size) 0
+      0 em($base-line-height, $base-font-size);
+  padding: 0;
+  & > * {
+    margin: 0;
+    padding: 0; } }
+
 ul {
   list-style: square;
   margin: em($base-line-height / 2, $base-font-size) 0
