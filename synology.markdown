@@ -4,7 +4,7 @@ Synology Notes
   - Author: [Damien Dart][1], <damiendart@pobox.com>
   - Licence: [Creative Commons Attribution 4.0 International License][2]
 
-[1]: <http://www.robotinaponcho.net>
+[1]: <http://www.robotinaponcho.net/>
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
