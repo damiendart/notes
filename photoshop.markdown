@@ -48,16 +48,16 @@ Cleaning up Line-art
 
 This is one of many ways of cleaning up scanned line-art.
 
-  1. Put your scanned line-art in its own layer.
+  1. Put the scanned line-art in its own layer.
   2. If necessary, use _Curves_ and/or _Levels_ adjustments to clean up
      the line-art. (I usually get away with just a _Levels_ adjustment.)
-  3. With the layer containing the line-art selected, in the _Channels_
-     palette click on any of the channels while holding down the
-     _Control_ key to create a selection of just the white areas of your
-     line-art. Invert the selection.
-  4. In a new transparent layer fill the selection black with the _Paint
-     Bucket_ tool. Deselect the selection.
-  5. Hide the layer with the scanned line-art.
+  3. In the _Channels_ palette click on any of the individual colour
+     channels while holding down the _Control_ key to create a selection
+     of just the white areas of your line-art.
+  4. Invert the selection and in a new transparent layer fill the
+     selection black with the _Paint Bucket_ tool.
+  6. Deselect the selection and delete or hide the layer with the
+     original scanned line-art.
 
 
 Miscellaneous Things
