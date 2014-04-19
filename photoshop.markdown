@@ -48,7 +48,7 @@ Cleaning up Line-art
 
 This is one of many ways of cleaning up scanned line-art.
 
-  1. Put the scanned line-art in its own layer.
+  1. Open your scanned line-art in Photoshop.
   2. If necessary, use _Curves_ and/or _Levels_ adjustments to clean up
      the line-art. (I usually get away with just a _Levels_ adjustment.)
   3. In the _Channels_ palette click on any of the individual colour
