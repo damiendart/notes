@@ -43,21 +43,19 @@ an A4-sized document with a resolution of 300 pixels per inch. Adjust
 the brush size accordingly when changing document resolution.
 
 
-Cleaning up Line-art
---------------------
+Cleaning up Scanned Line-art
+----------------------------
 
-This is one of many ways of cleaning up scanned line-art.
+This is currently how I go about cleaning up scanned line-art:
 
-  1. Open your scanned line-art in Photoshop.
-  2. If necessary, use _Curves_ and/or _Levels_ adjustments to clean up
-     the line-art. (I usually get away with just a _Levels_ adjustment.)
-  3. In the _Channels_ palette click on any of the individual colour
-     channels while holding down the _Control_ key to create a selection
-     of just the white areas of your line-art.
-  4. Invert the selection and in a new transparent layer fill the
+  1. Open your scanned line-art in Photoshop and, if necessary, make any
+     _Curves_ and/or _Levels_ adjustments to improve the line quality.
+  2. In the _Channels_ palette click on an individual colour channel
+     while holding down the _Control_ key to create an aliased selection
+     of the white areas of the line-art.
+  3. Invert the selection and on a new transparent layer fill the
      selection black with the _Paint Bucket_ tool.
-  6. Deselect the selection and delete or hide the layer with the
-     original scanned line-art.
+  4. Deselect the selection and delete or hide the scanned line-art.
 
 
 Miscellaneous Things
