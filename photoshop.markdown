@@ -43,12 +43,17 @@ an A4-sized document with a resolution of 300 pixels per inch. Adjust
 the brush size accordingly when changing document resolution.
 
 
-Cleaning up Scanned Line-art
-----------------------------
+Scanning and Cleaning up Line-art
+---------------------------------
 
-This is currently how I go about cleaning up scanned line-art:
+I use [VueScan][4] to scan in line-art; the _Line-art_ preset is good
+enough for my purposes (though sometimes I bump up the scan resolution).
+This is currently how I go about cleaning up scanned line-art in
+Photoshop:
 
-  1. Open your scanned line-art in Photoshop and, if necessary, make any
+[4]: <http://www.hamrick.com/>
+
+  1. Open up your scanned line-art and, if necessary, make any
      _Curves_ and/or _Levels_ adjustments to improve the line quality.
   2. In the _Channels_ palette click on an individual colour channel
      while holding down the _Control_ key to create an aliased selection
