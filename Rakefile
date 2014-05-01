@@ -8,7 +8,6 @@
 
 require "rubygems"
 require "bundler/setup"
-require "yaml"
 Bundler.require(:default)
 
 Haml::Filters::Scss.options[:cache] = false
