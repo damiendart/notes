@@ -47,9 +47,9 @@ Scanning and Cleaning up Line-art
 ---------------------------------
 
 I use [VueScan][4] to scan in line-art; the _Line-art_ preset is good
-enough for my purposes (though sometimes I bump up the scan resolution).
-This is currently how I go about cleaning up scanned line-art in
-Photoshop:
+enough for my purposes, though I bump up the scan resolution to at least
+600 DPI. This is currently how I go about cleaning up scanned line-art
+in Photoshop:
 
 [4]: <http://www.hamrick.com/>
 
