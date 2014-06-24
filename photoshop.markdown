@@ -43,13 +43,12 @@ an A4-sized document with a resolution of 300 pixels per inch. Adjust
 the brush size accordingly when changing document resolution.
 
 
-Scanning and Cleaning up Line-art
----------------------------------
+Scanning and Cleaning up Line-art and Pencil Work
+-------------------------------------------------
 
-I use [VueScan][4] to scan in line-art; the _Line-art_ preset is good
-enough for my purposes, though I bump up the scan resolution to at least
-600 DPI. This is currently how I go about cleaning up scanned line-art
-in Photoshop:
+I use [VueScan][4] to scan in line-art. VueScan's _Line-art_ preset is
+good enough for scanning line-art, though I bump up the scan resolution
+to at 600 DPI. Once scanned, I use Photoshop to touch things up:
 
 [4]: <http://www.hamrick.com/>
 
@@ -61,6 +60,10 @@ in Photoshop:
   3. Invert the selection and on a new transparent layer fill the
      selection black with the _Paint Bucket_ tool.
   4. Deselect the selection and delete or hide the scanned line-art.
+
+For pencil work which I intend to ink digitally, I still use VueScan's
+_Line-art_ preset but don't bother with further fiddling in Photoshop, I
+just slap the pencil work into its own layer and go from there.
 
 
 Miscellaneous Things
