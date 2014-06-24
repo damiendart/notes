@@ -8,39 +8,26 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Creating Custom Photoshop Brushes
----------------------------------
+Yet Another Inking Photoshop Brush
+----------------------------------
 
-The following recipe takes one of the default brush presets and tweaks
-it to create one that is more suited towards illustration work. A
-graphics tablet is required.
+This is what I use to ink digitally in Photoshop:
 
-  - Select either the brush or pencil tool.
+  - Select the pencil tool.
   - In the _Brush_ panel select the _Hard Round Pressure Size_ preset.
-  - In the _Brush Tip Shape_ options set:
-    - set the hardness to 0%, and
-    - set the spacing to 1%.
-  - In the _Shape Dynamics_ options set:
-    - Set the size jitter control to _Pen Pressure_, and
-    - set the minimum diameter to 20%.
-  - If using the brush tool, in the _Texture_ options set:
-    - Set the texture to any of the presets, it doesn't matter.
-    - Then set the scale to 100%,
-    - ensure _Texture Each Tip_ is enabled and the mode is set to
-      _Height_, and
-    - set the depth to 100%.
-  - Ensure _Smoothing_ is enabled.
+  - In the _Brush Tip Shape_ options set, set the hardness to 100% and
+    spacing to 1%.
+  - In the _Shape Dynamics_ options set, set the size jitter control to
+    _Pen Pressure_.
+  - In the _Scattering_ options set, set the scatter to 30% and the
+    count to 2.
+  - Enable _Smoothing_.
 
-The settings in the _Texture_ panel give a faux-aliasing effect if using
-the brush tool. This isn't necessary if using the pencil tool. [Remember
-to work at high document resolutions when working with aliased brushes
-for better results][3].
+[For the best results, work at high document resolutions when working
+with aliased brushes][3]. I tend to use this brush at size 90 when
+drawing on an A4-sized document with a resolution of 300 PPI.
 
 [3]: <http://fox-orian.tumblr.com/post/31595044234>
-
-I use this brush with the pencil tool at size 20 when drawing on
-an A4-sized document with a resolution of 300 pixels per inch. Adjust
-the brush size accordingly when changing document resolution.
 
 
 Scanning and Cleaning up Line-art and Pencil Work
