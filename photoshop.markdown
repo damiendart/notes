@@ -11,8 +11,6 @@ Photoshop Notes
 Yet Another Inking Photoshop Brush
 ----------------------------------
 
-This is what I use to ink digitally in Photoshop:
-
   - Select the pencil tool.
   - In the _Brush_ panel select the _Hard Round Pressure Size_ preset.
   - In the _Brush Tip Shape_ options set, set the hardness to 100% and
@@ -23,9 +21,9 @@ This is what I use to ink digitally in Photoshop:
     count to 2.
   - Enable _Smoothing_.
 
-[For the best results, work at high document resolutions when working
-with aliased brushes][3]. I tend to use this brush at size 90 when
-drawing on an A4-sized document with a resolution of 300 PPI.
+I tend to use this brush at size 90 when drawing on an A4-sized document
+with a resolution of 600 PPI, and with the tip feel set one notch below
+firm in the Wacom preferences panel.
 
 [3]: <http://fox-orian.tumblr.com/post/31595044234>
 
@@ -51,10 +49,3 @@ to at 600 DPI. Once scanned, I use Photoshop to touch things up:
 For pencil work which I intend to ink digitally, I still use VueScan's
 _Line-art_ preset but don't bother with further fiddling in Photoshop, I
 just slap the pencil work into its own layer and go from there.
-
-
-Miscellaneous Things
---------------------
-
-  - When using a Wacom tablet, I generally set the tip feel to one notch
-    below firm. I'll need to play around with this, though.
