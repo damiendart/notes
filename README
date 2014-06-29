@@ -7,7 +7,7 @@ After installing any dependencies with `bundle install`, generating HTML
 versions of my notes is a simple `rake` command away. Someday I'll get
 round to documenting the note format.
 
-I've put the HTML versions of my notes up on my [personal site][1].
+I've put the HTML versions of my notes up on [my personal site][1].
 
 [1]: <http://www.robotinaponcho.net/crap/>
 
