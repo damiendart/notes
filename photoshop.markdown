@@ -21,9 +21,10 @@ Yet Another Inking Photoshop Brush
     count to 2.
   - Enable _Smoothing_.
 
-I tend to use this brush at size 90 when drawing on an A4-sized document
-with a resolution of 600 PPI, and with the tip feel set one notch below
-firm in the Wacom preferences panel.
+As this brush isn't anti-aliased, [working in high document resolutions
+is recommended][1]. I tend to use this brush at size 90 when drawing on
+an A4-sized document with a resolution of 600 PPI. and with the tip feel
+set one notch below firm in the Wacom preferences panel.
 
 [3]: <http://fox-orian.tumblr.com/post/31595044234>
 
