@@ -49,6 +49,14 @@ h2 {
   line-height: em($line-height, $font-size);
   margin: em($base-line-height, $font-size) 0 0 0; }
 
+h3 {
+  $font-size: $base-font-size;
+  $line-height: $base-line-height;
+  font-size: em($font-size, $base-font-size);
+  font-weight: bold;
+  line-height: em($line-height, $font-size);
+  margin: em($base-line-height / 2, $font-size) 0 0 0; }
+
 p {
   margin: em($base-line-height / 2, $base-font-size) 0 0 0; }
 
