@@ -38,7 +38,7 @@ another Synology DiskStation.
     to run the `ntpdate -u -b [NTP-SERVER]` command as root seems to
     keep things in check.
   - Other modifications:
-    - Backing up email: Use [getmail][2] (requires Python, available
+    - Backing up email: Use [getmail][3] (requires Python, available
       from the _Package Center_).
     - Backing up remote Git repositories: Use Git (see _Fixing Git_) to
       create mirrors (remember to use the `--mirror` flag) and create an
@@ -46,15 +46,17 @@ another Synology DiskStation.
       DIR in [LOCATION-OF-REPOS]*.git; do [ -d "$DIR" ] && cd $DIR && [
       -e "FETCH_HEAD" ] && git fetch --q; done'` command as root.
 
+[3]: <http://pyropus.ca/software/getmail/>
+
 ### Fixing Git
 
 Git is available from the _Package Center_ in DSM, however it would
 crap out whenever you tried to do anything via HTTPS. Fortunately, the
-[solution is simple][3]: download <http://curl.haxx.se/ca/cacert.pem>
+[solution is simple][4]: download <http://curl.haxx.se/ca/cacert.pem>
 and point Git to it by setting `http.sslCAinfo` to the location of that
 file in your global or system-wide _.gitignore_.
 
-[3]: <http://stackoverflow.com/a/8467406>
+[4]: <http://stackoverflow.com/a/8467406>
 
 
 Miscellaneous Things
