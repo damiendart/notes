@@ -32,9 +32,10 @@ set one notch below firm in the Wacom preferences panel.
 Scanning and Cleaning up Line-art and Pencil Work
 -------------------------------------------------
 
-I use [VueScan][4] to scan in line-art. VueScan's _Line-art_ preset is
-good enough for scanning line-art, though I bump up the scan resolution
-to at 600 DPI. Once scanned, I use Photoshop to touch things up:
+I use [VueScan][4] to scan in line-art and pencil work. VueScan's
+_Line-art_ preset is good enough for scanning line-art, though I bump up
+the scan resolution to at 600 DPI. Once scanned, I use Photoshop to
+touch things up:
 
 [4]: <http://www.hamrick.com/>
 
@@ -50,3 +51,9 @@ to at 600 DPI. Once scanned, I use Photoshop to touch things up:
 For pencil work which I intend to ink digitally, I still use VueScan's
 _Line-art_ preset but don't bother with further fiddling in Photoshop, I
 just slap the pencil work into its own layer and go from there.
+
+Alternatively, for quick-and-dirty line-art or pencil work scanning for,
+say, posting onto Tumblr, I scan with VueScan's _Color_ or _Grey_ preset
+and then fiddle around with a _Levels_ adjustment layer in Photoshop. I
+find this method handles whatever image-resizing methods the various
+social media sites use better than the method above.
