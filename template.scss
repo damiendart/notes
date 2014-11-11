@@ -23,7 +23,7 @@ body {
   -webkit-text-size-adjust: 100%;
   @media screen and (max-width: em($content-width, $base-font-size)) {
     font-size: percentage(($base-font-size * 0.875) / $base-font-size);
-    margin: em($base-layout-unit, $base-font-size * 0.875); } }
+    margin: em($base-layout-unit / 2, $base-font-size * 0.875); } }
 
 a {
   color: $base-link-colour;
