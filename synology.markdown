@@ -37,9 +37,9 @@ another Synology DiskStation.
     will occasionally get out of sync. Creating a daily scheduled task
     to run the `ntpdate -u -b [NTP-SERVER]` command as root seems to
     keep things in check.
+  - Run the _Security Advisor_ to see if anything else needs attention.
   - Other modifications:
-    - Backing up email: Use [getmail][3] (requires Python, available
-      from the _Package Center_).
+    - Backing up email: Use [getmail][3] (requires Python).
     - Backing up remote Git repositories: Use Git (see _Fixing Git_) to
       create mirrors (remember to use the `--mirror` flag) and create an
       daily scheduled task to run the `/bin/su - [ADMIN-USER] -c 'for
