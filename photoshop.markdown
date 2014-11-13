@@ -8,27 +8,6 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Yet Another Inking Photoshop Brush
-----------------------------------
-
-  - Select the pencil tool.
-  - In the _Brush_ panel select the _Hard Round Pressure Size_ preset.
-  - In the _Brush Tip Shape_ options set, set the hardness to 100% and
-    spacing to 1%.
-  - In the _Shape Dynamics_ options set, set the size jitter control to
-    _Pen Pressure_.
-  - In the _Scattering_ options set, set the scatter to 30% and the
-    count to 2.
-  - Enable _Smoothing_.
-
-As this brush isn't anti-aliased, [working in high document resolutions
-is recommended][1]. I tend to use this brush at size 90 when drawing on
-an A4-sized document with a resolution of 600 PPI. and with the tip feel
-set one notch below firm in the Wacom preferences panel.
-
-[3]: <http://fox-orian.tumblr.com/post/31595044234>
-
-
 Scanning and Cleaning up Line-art and Pencil Work
 -------------------------------------------------
 
