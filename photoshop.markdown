@@ -8,31 +8,21 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Scanning and Cleaning up Line-art and Pencil Work
--------------------------------------------------
+Scanning and Cleaning up Inked Line-art
+---------------------------------------
 
-I use [VueScan][4] to scan in line-art and pencil work. VueScan's
-_Line-art_ preset is good enough for scanning line-art, though I bump up
-the scan resolution to at 600 DPI. Once scanned, I use Photoshop to
-touch things up:
+I use [VueScan][3]'s _Grey_ preset when scanning in my inked line-art,
+though I bump up the scan resolution to 600 DPI. Then, in Photoshop, I
+do the following:
 
-[4]: <http://www.hamrick.com/>
-
-  1. Open up your scanned line-art and, if necessary, make any
-     _Curves_ and/or _Levels_ adjustments to improve the line quality.
-  2. In the _Channels_ palette click on an individual colour channel
-     while holding down the _Control_ key to create an aliased selection
-     of the white areas of the line-art.
+  1. Open up the scanned line-art and use a _Levels_ adjustment layer to
+     improve the line quality and whites. (The remaining steps are only
+     neccessary if you're planning to colour in the line-art.)
+  2. At the bottom of the _Channels_ palette, click on _Load channel as
+     selection_ to create a selection of the white areas of the image.
   3. Invert the selection and on a new transparent layer fill the
-     selection black with the _Paint Bucket_ tool.
-  4. Deselect the selection and delete or hide the scanned line-art.
+     selection black.
+  4. Deselect the selection and delete the original scanned line-art.
+  5. Change the image mode to either RGB or CMYK.
 
-For pencil work which I intend to ink digitally, I still use VueScan's
-_Line-art_ preset but don't bother with further fiddling in Photoshop, I
-just slap the pencil work into its own layer and go from there.
-
-Alternatively, for quick-and-dirty line-art or pencil work scanning for,
-say, posting onto Tumblr, I scan with VueScan's _Color_ or _Grey_ preset
-and then fiddle around with a _Levels_ adjustment layer in Photoshop. I
-find this method handles whatever image-resizing methods the various
-social media sites use better than the method above.
+[3]: <http://www.hamrick.com/>
