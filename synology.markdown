@@ -13,7 +13,7 @@ Setting up a Synology DiskStation
 
 ### Kinda-obvious Setup Stuff I Might Forget To Do
 
-  - Ensure the Synology DiskStation is given a static IP.
+  - Ensure the DiskStation is given a static IP.
   - Instead of using the default _admin_ account, create a new user and
     give them admin privileges, then disable both the default _admin_
     and any guest accounts.
@@ -43,11 +43,12 @@ Setting up a Synology DiskStation
 
 The Git build from the _Package Center_ in DSM craps out whenever you
 tried to do anything via HTTPS. Fortunately, the [solution is
-simple][4]: download <http://curl.haxx.se/ca/cacert.pem> and point Git
-to it by setting `http.sslCAinfo` to the location of that file in your
-global or system-wide _.gitignore_.
+simple][4]: download [a recent CA Root certificate bundle][5] to your
+DiskStation and point Git to it by setting `http.sslCAinfo` to the
+location of that file in your global or system-wide _.gitignore_.
 
 [4]: <http://stackoverflow.com/a/8467406>
+[5]: <http://curl.haxx.se/ca/cacert.pem>
 
 
 Miscellaneous Things
