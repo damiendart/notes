@@ -14,7 +14,7 @@ body {
   // Setting the font size initially to 100% avoids the Internet Explorer 6
   // and Internet Explorer 7 exaggerated text-resizing bug (see
   // <http://alistapart.com/article/howtosizetextincss#section5>).
-  font: 100%/1.5 $helvetica;
+  font: 100%/1.5 $georgia;
   @if ($base-font-size != 16px) {
     font-size: percentage($base-font-size / 16px); }
   -webkit-font-smoothing: antialiasing;
@@ -37,6 +37,7 @@ a {
 h1 {
   $font-size: 32px;
   $line-height: 32px;
+  font-family: $helvetica;
   font-size: em($font-size, $base-font-size);
   line-height: em($line-height, $font-size);
   margin: 0; }
@@ -44,16 +45,16 @@ h1 {
 h2 {
   $font-size: 24px;
   $line-height: $font-size;
+  font-family: $helvetica;
   font-size: em($font-size, $base-font-size);
-  font-weight: normal;
   line-height: em($line-height, $font-size);
   margin: em($base-line-height, $font-size) 0 0 0; }
 
 h3 {
   $font-size: $base-font-size;
   $line-height: $base-line-height;
+  font-family: $helvetica;
   font-size: em($font-size, $base-font-size);
-  font-weight: bold;
   line-height: em($line-height, $font-size);
   margin: em($base-line-height / 2, $font-size) 0 0 0; }
 
@@ -73,6 +74,11 @@ ul {
   margin: em($base-line-height / 2, $base-font-size) 0
       0 em($base-line-height, $base-font-size);
   padding: 0;
+  &:first-of-type {
+    background: darken($base-background-colour, 12.5%);
+    list-style: none;
+    margin: em($base-line-height / 2, $base-font-size) 0 0 0; 
+    padding: em($base-line-height / 2, $base-font-size); }
   & > * {
     margin: 0;
     padding: 0;
