@@ -22,20 +22,21 @@ Setting up a Synology DiskStation
   - Use rsync to transfer files. If using a different copying method,
     rsync's dry-run mode with the `c` flag can be used to check
     everything has copied correctly.
-  - Make sure backup stuff (S3, external hard-drive) is set up.
+  - Run the _Security Advisor_ to see if anything else needs attention,
+    and enable the regular scan schedule to perform a weekly scan.
+  - Make sure daily backup stuff (S3, external hard-drive) is set up.
   - I'm not sure how prevalent this is, but even with NTP
     synchronisation enabled in DSM's _Regional Options_ control panel
     the date and time will occasionally get out of sync. Creating a
     daily scheduled task to run the `ntpdate -u -b [SOME-NTP-SERVER]`
     command as root seems to keep things in check.
-  - Daily scheduled tasks should be run at night, where possible.
-  - Run the _Security Advisor_ to see if anything else needs attention.
-  - Backing up email: Use [getmail][3].
+  - Backing up email: Use [getmail][3] to fetch email every three hours.
   - Backing up remote Git repositories: Use Git (see _Fixing Git_) to
     create mirrors (use the `--mirror` flag) and create an
     daily scheduled task to run the `/bin/su - root -c 'for DIR
     in [LOCATION-OF-REPOS]*.git; do [ -d "$DIR" ] && cd $DIR && [ -e
     "FETCH_HEAD" ] && git fetch --q; done'` command.
+  - Daily and weekly scheduled tasks should be run at night.
 
 [3]: <http://pyropus.ca/software/getmail/>
 
