@@ -80,7 +80,7 @@ ul {
   &:first-of-type {
     background: darken($base-background-colour, 12.5%);
     list-style: none;
-    margin: em($base-line-height / 2, $base-font-size) 0 0 0; 
+    margin: em($base-line-height / 2, $base-font-size) 0 0 0;
     padding: em($base-line-height / 2, $base-font-size); }
   & > * {
     margin: 0;
