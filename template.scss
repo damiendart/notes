@@ -34,6 +34,9 @@ a {
     background-colour: $base-background-colour;
     color: $base-link-colour; } }
 
+code {
+  background: darken($base-background-colour, 12.5%); }
+
 h1 {
   $font-size: 32px;
   $line-height: 32px;
