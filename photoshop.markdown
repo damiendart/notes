@@ -12,7 +12,7 @@ Cleaning up Line-art in Photoshop
 ---------------------------------
 
   1. Open up the scanned inked artwork and use _Levels_ and _Threshold_
-     adjustment layer to improve the line quality and whites.
+     adjustment layers to improve the line quality and whites.
   2. At the bottom of the _Channels_ palette, click on _Load channel as
      selection_ to create a selection of the white areas of the image.
   3. Invert the selection and on a new transparent layer fill the
