@@ -23,8 +23,14 @@ Preparing Pencil Artwork for Inking in Photoshop
 Cleaning up Line-art in Photoshop
 ---------------------------------
 
-  1. Open up the scanned inked artwork and use _Levels_ and _Threshold_
-     adjustment layers to improve the line quality and whites.
+  1. Open up the scanned inked artwork in Photoshop and clean up the
+     artwork with adjustment layers:
+     -  Remove any non-repro blue underdrawings with a _Hue/Saturation_
+        adjustment layer. After choosing the _Cyans_ colour range in the
+        _Properties_ panel, set the saturation to minimimum and the
+        lightness to maximum.
+     -  Use a _Levels_ adjustment layer to improve the line quality and
+        whites, and to remove any remaining underdrawings.
   2. At the bottom of the _Channels_ palette, click on _Load channel as
      selection_ to create a selection of the white areas of the image.
   3. Invert the selection and on a new transparent layer fill the
