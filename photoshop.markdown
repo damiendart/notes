@@ -8,6 +8,18 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
+Preparing Pencil Artwork for Inking in Photoshop
+------------------------------------------------
+
+  1. Open up the scanned pencil artwork and use a _Levels_ adjustment
+     layer to improve the line quality and whites.
+  2. Clean up the artwork with white on a seperate layer, if necessary.
+  3. Convert the image to grayscale (using the _Mode_ menu found in the
+     _Image_ menu) and then to monotone using 20% cyan as the primary
+     ink. The shade of cyan used might depend on personal preference
+     and printer output.
+
+
 Cleaning up Line-art in Photoshop
 ---------------------------------
 
