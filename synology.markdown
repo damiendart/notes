@@ -17,6 +17,7 @@ Setting up a Synology DiskStation
   - Instead of using the default _admin_ account, create a new user and
     give them admin privileges, then disable both the default _admin_
     and any guest accounts.
+  - Enable SMB 3 in the _File Services_ control panel in DSM.
   - Go through the _Security_ control panel in DSM.
   - When creating folders, remember to set reasonable permissions.
   - Use rsync to transfer files. If using a different copying method,
