@@ -8,8 +8,8 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Preparing Pencil Artwork for Inking in Photoshop
-------------------------------------------------
+Converting Pencil Artwork to Non-Repro Blue
+-------------------------------------------
 
   1. Open up the scanned pencil artwork in Photoshop and use a _Levels_
      adjustment layer to improve the line quality and whites.
@@ -20,20 +20,21 @@ Preparing Pencil Artwork for Inking in Photoshop
      and printer output.
 
 
-Cleaning up Line-art in Photoshop
----------------------------------
+Cleaning up Line-art
+--------------------
 
-  1. Clean up the scanned inked artwork in Photoshop with adjustment
-     layers:
+  1. Clean up the scanned lineart in Photoshop with adjustment layers:
      -  Remove any non-repro blue underdrawings with a _Hue/Saturation_
         adjustment layer. After choosing the _Cyans_ colour range in the
         _Properties_ panel, set the saturation to minimimum and
         lightness to maximum.
-     -  Use a _Levels_ adjustment layer to improve the line quality and
-        whites and to remove any remaining underdrawings.
+     -  Use _Curves_ and/or _Levels_ adjustment layers to improve the
+        line quality and whites, and remove any remaining underdrawings.
+     -  For inked lineart, use a _Threshold_ adjustment layer to convert
+        the lineart to black-and-white bitmap.
   2. At the bottom of the _Channels_ palette, click on _Load channel as
      selection_ to create a selection of the white areas of the image.
-  3. Invert the selection and on a new transparent layer fill the
-     selection black.
-  4. Deselect the selection and delete the original scanned line-art.
-  5. Change the image mode to either RGB or CMYK, if necessary.
+     Invert the selection.
+  3. Create a new fill layer. The selection should be automatically
+     applied to the fill layer's mask. Deselect the selection.
+  5. Delete or hide the scanned artwork and adjustment layers.
