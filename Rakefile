@@ -15,12 +15,12 @@ Haml::Filters::Scss.options[:style] = :compressed
 
 CLOBBER.include(FileList["*.html"])
 task :default => FileList["*.markdown"].map { |file|
-    File.basename(file, ".markdown") + "-notes.html" }
+    File.basename(file, ".markdown") + ".html" }
 
 FileList["*.markdown"].map { |file|
     File.basename(file, ".markdown") }.each do |document_basename|
   desc "Spit out \"#{document_basename}.html\"."
-  file "#{document_basename}-notes.html" => FileList["Rakefile",
+  file "#{document_basename}.html" => FileList["Rakefile",
       "#{document_basename}.markdown", "template.*"] do |task|
     puts "# Spitting out \"#{task.name}\"."
     content = Nokogiri::HTML.fragment(Redcarpet::Render::SmartyPants.render(
