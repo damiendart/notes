@@ -26,29 +26,30 @@ Setting up a Synology DiskStation
   - Run the _Security Advisor_ to see if anything else needs attention,
     and enable the regular scan schedule to perform a weekly scan.
   - Make sure daily backup stuff (S3, external hard-drive) is set up.
-  - The Git build from the _Package Center_ in DSM craps out whenever
-    you tried to do anything via HTTPS. Fortunately, the [solution is
-    simple][4]: download [a recent CA Root certificate bundle][5] to
-    your DiskStation and point Git to it by setting `http.sslCAinfo` to
-    the location of that file in your global or system-wide
-    _.gitignore_.
-  - Daily and weekly scheduled tasks should be run at night.
-    - Use [getmail][3] to backup email every three hours.
-    - Backing up remote Git repositories: After creating mirrors, create
-      a daily scheduled task to run the `/bin/su - root -c 'for DIR in
-      [LOCATION-OF-REPOS]*.git; do [ -d "$DIR" ] && cd $DIR && [ -e
-      "FETCH_HEAD" ] && git fetch --q; done'` command.
-    - I'm not sure how prevalent this is, but even with NTP
-      synchronisation enabled in DSM's _Regional Options_ control panel
-      the date and time will occasionally get out of sync. Creating a
-      daily scheduled task to run the `ntpdate -u -b [SOME-NTP-SERVER]`
-      command as root seems to keep things in check.
+  - Git from the _Package Center_ in DSM craps out whenever you tried to
+    do anything via HTTPS. Fortunately, the [solution is simple][3]:
+    download [a recent CA Root certificate bundle][4] to your
+    DiskStation and point Git to it by setting `http.sslCAinfo` to the
+    location of that file in your global or system-wide _.gitignore_.
+  - Set up custom scheduled tasks.
+    - Use [getmail][5] to backup email every three hours.
+    - Use [mirrorgithub][6] to backup public GitHub repositories daily.
+    - Use [nfsnddns][7] to update the DNS records of any
+      NearlyFreeSpeech.NET-managed domains hourly.
+    - Even with NTP synchronisation enabled in DSM's _Regional Options_
+      control panel the date and time will occasionally get out of sync.
+      Creating a daily scheduled task to run the `ntpdate -u -b
+      [SOME-NTP-SERVER]` command as root seems to keep things in check.
+    - Daily and weekly scheduled tasks should be run at night.
   - When setting up DNS-O-Matic DDNS support in the _External Access_
-    control panel, use "all.dnsomatic.com" for the hostname. 
+    control panel, use `all.dnsomatic.com` for the hostname and replace
+    any at-signs in the username with `%30`.
 
-[3]: <http://pyropus.ca/software/getmail/>
-[4]: <http://stackoverflow.com/a/8467406>
-[5]: <http://curl.haxx.se/ca/cacert.pem>
+[3]: <http://stackoverflow.com/a/8467406>
+[4]: <http://curl.haxx.se/ca/cacert.pem>
+[5]: <http://pyropus.ca/software/getmail/>
+[6]: <http://www.robotinaponcho.net/git/?p=robotinaponcho.git;a=blob;f=www/private/mirrorgithub;hb=HEAD>
+[7]: <http://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns;hb=HEAD>
 
 Miscellaneous Things
 --------------------
