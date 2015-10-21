@@ -36,6 +36,7 @@ Setting up a Synology DiskStation
     - Use [mirrorgithub][6] to backup public GitHub repositories daily.
     - Use [nfsnddns][7] to update the DNS records of any
       NearlyFreeSpeech.NET-managed domains hourly.
+    - Use the [Pinboard API][8] to backup Pinboard bookmarks.
     - Even with NTP synchronisation enabled in DSM's _Regional Options_
       control panel the date and time will occasionally get out of sync.
       Creating a daily scheduled task to run the `ntpdate -u -b
@@ -50,6 +51,7 @@ Setting up a Synology DiskStation
 [5]: <http://pyropus.ca/software/getmail/>
 [6]: <http://www.robotinaponcho.net/git/?p=robotinaponcho.git;a=blob;f=www/private/mirrorgithub;hb=HEAD>
 [7]: <http://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns;hb=HEAD>
+[8]: <https://pinboard.in/api/>
 
 Miscellaneous Things
 --------------------
