@@ -34,7 +34,9 @@ Cleaning up Line-art
         the lineart to black-and-white bitmap.
   2. At the bottom of the _Channels_ palette, click on _Load channel as
      selection_ to create a selection of the white areas of the image.
-     Invert the selection.
-  3. Create a new fill layer. The selection should be automatically
-     applied to the fill layer's mask. Deselect the selection.
-  5. Delete or hide the scanned artwork and adjustment layers.
+  3. Invert the selection.
+  4. Create a new fill layer. The selection should be automatically
+     applied to the fill layer's mask. Alternatively, use the _Paint
+     Bucket_ tool to fill the selection on a new layer.
+  5. Deselect the selection.
+  6. Delete or hide the scanned artwork and adjustment layers.
