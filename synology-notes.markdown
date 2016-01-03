@@ -18,6 +18,9 @@ Setting up a Synology DiskStation
     give them admin privileges, then disable both the default _admin_
     and any guest accounts.
   - Enable SMB 3 in the _File Services_ control panel in DSM.
+  - Hide the _homes_ shared folder in "My Network Places" by setting the
+    adforementioned option in the _Shared Folder_ control panel in DSM.
+    This is purely for aesthetic purposes.
   - Go through the _Security_ control panel in DSM.
   - When creating folders, remember to set reasonable permissions.
   - Use rsync to transfer files. If using a different copying method,
