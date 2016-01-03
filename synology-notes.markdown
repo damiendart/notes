@@ -11,8 +11,6 @@ Synology Notes
 Setting up a Synology DiskStation
 ---------------------------------
 
-### Setup Stuff I Might Forget To Do
-
   - Ensure the DiskStation is given a static IP.
   - Instead of using the default _admin_ account, create a new user and
     give them admin privileges, then disable both the default _admin_
