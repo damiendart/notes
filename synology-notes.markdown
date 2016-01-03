@@ -44,7 +44,7 @@ Setting up a Synology DiskStation
     - Daily and weekly scheduled tasks should be run at night.
   - When setting up DNS-O-Matic DDNS support in the _External Access_
     control panel, use `all.dnsomatic.com` for the hostname and replace
-    any at-signs in the username with `%30`.
+    any `@` characters in the username with `%30`.
 
 [3]: <http://stackoverflow.com/a/8467406>
 [4]: <http://curl.haxx.se/ca/cacert.pem>
