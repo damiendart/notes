@@ -40,3 +40,13 @@ Cleaning up Line-art
      the selection on a new layer.
   5. Deselect the selection.
   6. Delete or hide the scanned artwork and adjustment layers.
+
+
+Image Filesize Reduction Techniques
+-----------------------------------
+
+  - Use [ExifTool][3] and [jpegtran][3] to reduce JPEG image filesizes:
+    `jpegtran -optimize -progressive [IMAGE] > [OUTPUT] &&
+    exiftool -all= --icc_profile:all [OUTPUT]`.
+
+[3]: <http://jpegclub.org/jpegtran/>
