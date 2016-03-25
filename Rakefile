@@ -29,7 +29,7 @@ FileList["*.markdown"].map { |file|
     if (!IO.popen("git log #{document_basename}.markdown").readlines.empty?)
       last_update_html = Nokogiri::XML::Node.new("li", content)
       last_update_html.inner_html = "Last Updated: " +
-          "<a href=\"http://www.robotinaponcho.net/git/gitweb.cgi?p=notes.git;h=" +
+          "<a href=\"https://www.robotinaponcho.net/git/?p=notes.git;h=" +
           `git log -n 1 --pretty=format:%H #{document_basename}.markdown` + "\">" +
           `git log -n 1 --pretty=format:%aD #{document_basename}.markdown` + "</a>"
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
