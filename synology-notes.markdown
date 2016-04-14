@@ -19,7 +19,8 @@ Setting up a Synology DiskStation
   - Hide the _homes_ shared folder in "My Network Places" by setting the
     adforementioned option in the _Shared Folder_ control panel in DSM.
     This is purely for aesthetic purposes.
-  - Go through the _Security_ control panel in DSM.
+  - Go through the _Security_ control panel in DSM. (Check the control
+    panel on a regular basis for new features.)
   - When creating folders, remember to set reasonable permissions.
   - Use rsync to transfer files. If using a different copying method,
     rsync's dry-run mode with the `c` flag can be used to check
