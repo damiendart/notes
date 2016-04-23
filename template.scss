@@ -9,7 +9,7 @@ $base-layout-unit: $base-line-height;
 $content-width: 600px;
 
 body {
-  background-color: $base-background-colour;
+  background: $base-background-colour;
   color: $base-foreground-colour;
   // Setting the font size initially to 100% avoids the Internet Explorer 6
   // and Internet Explorer 7 exaggerated text-resizing bug (see
@@ -41,7 +41,7 @@ code {
 
 h1 {
   $font-size: 32px;
-  $line-height: 32px;
+  $line-height: $font-size;
   font-family: $helvetica;
   font-size: em($font-size, $base-font-size);
   line-height: em($line-height, $font-size);
