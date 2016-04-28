@@ -17,14 +17,12 @@ body {
   font: 100%/1.5 $georgia;
   @if ($base-font-size != 16px) {
     font-size: percentage($base-font-size / 16px); }
-  -webkit-font-smoothing: antialiasing;
   margin: em($base-layout-unit * 2, $base-font-size) auto;
   max-width: em($content-width, $base-font-size);
   padding: 0 em($base-layout-unit * 2, $base-font-size);
-  -webkit-text-size-adjust: 100%;
   @media screen and (max-width: em($content-width, $base-font-size)) {
-    font-size: percentage(($base-font-size * 0.875) / $base-font-size);
-    margin: em($base-layout-unit / 2, $base-font-size * 0.875);
+    font-size: 87.5%;
+    margin: em($base-layout-unit / 2, $base-font-size);
     padding: 0; } }
 
 a {
