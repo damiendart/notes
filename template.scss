@@ -5,7 +5,6 @@ $base-font-size: 16px;
 $base-foreground-colour: #000000;
 $base-line-height: 24px;
 $base-link-colour: #0000ff;
-$base-layout-unit: $base-line-height;
 $content-width: 600px;
 
 body {
@@ -17,12 +16,12 @@ body {
   font: 100%/1.5 $georgia;
   @if ($base-font-size != 16px) {
     font-size: percentage($base-font-size / 16px); }
-  margin: em($base-layout-unit * 2, $base-font-size) auto;
+  margin: em($base-line-height * 2, $base-font-size) auto;
   max-width: em($content-width, $base-font-size);
-  padding: 0 em($base-layout-unit * 2, $base-font-size);
+  padding: 0 em($base-line-height * 2, $base-font-size);
   @media screen and (max-width: em($content-width, $base-font-size)) {
     font-size: 87.5%;
-    margin: em($base-layout-unit / 2, $base-font-size);
+    margin: em($base-line-height / 2, $base-font-size);
     padding: 0; } }
 
 a {
