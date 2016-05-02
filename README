@@ -3,18 +3,19 @@ Damien's Notes
 
 A bunch of notes about stuff and a janky publish-to-HTML script.
 
-After installing any dependencies with `bundle install`, generating HTML
-versions of my notes is a simple `rake` command away. Someday I'll get
-round to documenting the note format.
+After installing [UglifyJS][1] and any Ruby dependencies (see the
+_Gemfile_), generating HTML versions of my notes is a simple `rake`
+command away.  Someday I'll get round to documenting the note format.
 
-I've put the HTML versions of my notes up on [my personal site][1].
+I've put the HTML versions of my notes up on [my personal site][2].
 
 The script and accompanying template files are free and unencumbered
 software released into the public domain (see the accompanying
 "UNLICENCE" file for more information) and the notes are licensed under
-a [Creative Commons Attribution 4.0 International License][2].
+a [Creative Commons Attribution 4.0 International License][3].
 
-[1]: <http://www.robotinaponcho.net/crap/>
-[2]: <http://creativecommons.org/licenses/by/4.0/>
+[1]: <https://github.com/mishoo/UglifyJS2>
+[2]: <https://www.robotinaponcho.net/crap/>
+[3]: <http://creativecommons.org/licenses/by/4.0/>
 
 -- Damien
