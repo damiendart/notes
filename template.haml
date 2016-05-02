@@ -9,3 +9,4 @@
     %title= title
   %body
     = content
+    %script= `uglifyjs template.js -c --inline-script -m`
