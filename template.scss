@@ -26,12 +26,9 @@ body {
 
 a {
   color: $base-link-colour;
+  text-decoration: none;
   &:active, &:focus, &:hover, &:visited:hover {
-    background-color: $base-link-colour;
-    color: $base-background-colour; }
-  &:visited {
-    background-colour: $base-background-colour;
-    color: $base-link-colour; } }
+    text-decoration: underline; } }
 
 code {
   background: darken($base-background-colour, 12.5%); }
