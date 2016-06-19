@@ -6,6 +6,7 @@
 # free and unencumbered software released into the public domain. For
 # more information, please refer to the accompanying "UNLICENCE" file.
 
+require "open3"
 require "rubygems"
 require "bundler/setup"
 Bundler.require(:default)
@@ -44,8 +45,8 @@ FileList["*.markdown"].map { |file|
         :content => content.to_html, :title => content.xpath("h1")[0].content })
     output = output.gsub(/^[\s]*$\n/, "")
     output = output.gsub(%r{^\s*//.*\n}, "")
-    File.open(task.name, "w") do |file|
-      file.write(output)
-    end
+    stdin, stdout, stderr = Open3.popen3("html-minifier --remove-comments " +
+        "--decode-entities --collapse-whitespace -o #{task.name}")
+    stdin.puts(output)
   end
 end
