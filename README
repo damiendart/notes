@@ -5,7 +5,7 @@ A bunch of notes about stuff and a janky publish-to-HTML script.
 
 After installing [UglifyJS][1] and any Ruby dependencies (see the
 _Gemfile_), generating HTML versions of my notes is a simple `rake`
-command away.  Someday I'll get round to documenting the note format.
+command away. See _Rakefile_ for information on the note format.
 
 I've put the HTML versions of my notes up on [my personal site][2].
 

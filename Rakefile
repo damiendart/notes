@@ -1,6 +1,16 @@
 # Converts Markdown-formatted notes into HTML documents.
 #
-# TODO: Document note format.
+# This script makes two assumptions about the notes it consumes:
+#
+#   - The first block element of the note must be a first-level
+#     header which used as the HTML document title.
+#   - The second block element must be an unordered list of note
+#     metadata where each item must be formatted as `KEY: VALUE`. At the
+#     moment, the only required item is an "Author" item.
+#
+# Bad things will happen if the two required block elements are missing;
+# this script is incredibly fragile! For examples, please see the
+# accompanying Markdown notes.
 #
 # This file was written by Damien Dart, <damiendart@pobox.com>. This is
 # free and unencumbered software released into the public domain. For
