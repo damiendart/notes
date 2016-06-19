@@ -6,9 +6,9 @@
 # free and unencumbered software released into the public domain. For
 # more information, please refer to the accompanying "UNLICENCE" file.
 
+require "bundler/setup"
 require "open3"
 require "rubygems"
-require "bundler/setup"
 Bundler.require(:default)
 
 Haml::Filters::Scss.options[:cache] = false
