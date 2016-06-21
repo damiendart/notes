@@ -9,8 +9,8 @@ Damien's Notes
 
 ## Notessssssss
 
-  - [Notes on maintaining a Synology DiskStation][3].
-  - [Details on Photoshop techniques I often use][4].
+  - [Synology Notes][3]
+  - [Photoshop Notes][4]
 
 [3]: <https://www.robotinaponcho.net/crap/synology-notes.html>
 [4]: <https://www.robotinaponcho.net/crap/photoshop-notes.html>
