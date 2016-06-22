@@ -12,5 +12,5 @@ Damien's Notes
   - [Synology Notes][3]
   - [Photoshop Notes][4]
 
-[3]: <https://www.robotinaponcho.net/crap/synology-notes.html>
-[4]: <https://www.robotinaponcho.net/crap/photoshop-notes.html>
+[3]: <https://www.robotinaponcho.net/notes/synology>
+[4]: <https://www.robotinaponcho.net/notes/photoshop>
