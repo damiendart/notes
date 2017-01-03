@@ -13,7 +13,8 @@ body {
   // Setting the font size initially to 100% avoids the Internet Explorer 6
   // and Internet Explorer 7 exaggerated text-resizing bug (see
   // <http://alistapart.com/article/howtosizetextincss#section5>).
-  font: 100%/1.5 $georgia;
+  font: 100%/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   @if ($base-font-size != 16px) {
     font-size: percentage($base-font-size / 16px); }
   margin: em($base-line-height * 2, $base-font-size) auto;
