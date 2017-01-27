@@ -9,4 +9,8 @@
     %title= title
   %body
     = content
+    - if not title.include? "Damien"
+      %footer
+        %hr
+        %a{:href => "https://www.robotinaponcho.net/notes/"} &larr; Damien's Notes index
     %script= `uglifyjs template.js -c --inline-script -m`

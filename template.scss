@@ -33,6 +33,13 @@ a {
   &:active, &:focus, &:hover, &:visited:hover {
     text-decoration: underline; } }
 
+footer {
+  font-style: italic;
+  margin: em($base-line-height * 2, $base-font-size) 0 0 0;
+  text-align: center;
+  hr {
+    display: none; } }
+
 h1 {
   $font-size: 32px;
   $line-height: $font-size;
