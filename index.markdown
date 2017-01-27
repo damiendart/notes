@@ -7,10 +7,10 @@ Damien's Notes
 [1]: <https://www.robotinaponcho.net/>
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
-## The Not-so-big List of Notes
+## The not-so-big list of notes
 
-  - [Synology notes][3]: Setting up a Synology DiskStation and stuff.
-  - [Photoshop notes][4]: Things I cannot be arsed committing to memory.
+  - [Synology Notes][3]: Setting up a Synology DiskStation and stuff.
+  - [Photoshop Notes][4]: Things I cannot be arsed committing to memory.
 
 
 ## Updates

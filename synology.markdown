@@ -58,7 +58,7 @@ Setting up a Synology DiskStation
 [7]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns;hb=HEAD>
 [8]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=pinboardbackup;hb=HEAD>
 
-Miscellaneous Things
+Miscellaneous things
 --------------------
 
   - The _Task Scheduler_ control panel in DSM doesn't tell you whether a

@@ -8,7 +8,7 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Converting Pencil Artwork to Non-Repro Blue
+Converting pencil artwork to non-repro blue
 -------------------------------------------
 
   1. Open up the scanned pencil artwork in Photoshop and use a _Levels_
@@ -20,7 +20,7 @@ Converting Pencil Artwork to Non-Repro Blue
      and printer output.
 
 
-Cleaning up Line-art
+Cleaning up line-art
 --------------------
 
   1. Clean up the scanned lineart in Photoshop with adjustment layers:
@@ -42,7 +42,7 @@ Cleaning up Line-art
   6. Delete or hide the scanned artwork and adjustment layers.
 
 
-Image Filesize Reduction Techniques
+Image filesize reduction techniques
 -----------------------------------
 
   - Use [ExifTool][3] and [jpegtran][3] to reduce JPEG image filesizes:
