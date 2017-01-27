@@ -1,10 +1,12 @@
 @import "bourbon";
 
-$base-background-colour: #ffffff;
+$base-background-colour: #151515;
 $base-font-size: 16px;
-$base-foreground-colour: #000000;
+$base-foreground-colour: #d0d0d0;
+$base-header-colour: #ddb26f;
 $base-line-height: 24px;
-$base-link-colour: #0000ff;
+$base-link-colour: #6fc2ef;
+$base-secondary-background-colour: #202020;
 $content-width: 600px;
 
 body {
@@ -31,12 +33,10 @@ a {
   &:active, &:focus, &:hover, &:visited:hover {
     text-decoration: underline; } }
 
-code {
-  background: darken($base-background-colour, 12.5%); }
-
 h1 {
   $font-size: 32px;
   $line-height: $font-size;
+  color: $base-header-colour;
   font-family: $helvetica;
   font-size: em($font-size, $base-font-size);
   line-height: em($line-height, $font-size);
@@ -45,6 +45,7 @@ h1 {
 h2 {
   $font-size: 24px;
   $line-height: $font-size;
+  color: $base-header-colour;
   font-family: $helvetica;
   font-size: em($font-size, $base-font-size);
   line-height: em($line-height, $font-size);
@@ -77,7 +78,7 @@ ul {
       0 em($base-line-height, $base-font-size);
   padding: 0;
   body > &:first-of-type {
-    background: darken($base-background-colour, 12.5%);
+    background: $base-secondary-background-colour;
     list-style: none;
     margin: em($base-line-height / 2, $base-font-size) 0 0 0;
     padding: em($base-line-height / 2, $base-font-size); }
