@@ -4,7 +4,6 @@
 
 source "https://rubygems.org"
 
-gem "bourbon"
 gem "haml"
 # For Ubuntu, the "zlib1g-dev" package is required to install Nokogiri.
 gem "nokogiri"

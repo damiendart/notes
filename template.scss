@@ -1,30 +1,23 @@
-@import "bourbon";
-
 $base-background-colour: #151515;
-$base-font-size: 16px;
 $base-foreground-colour: #d0d0d0;
 $base-header-colour: #ddb26f;
-$base-line-height: 24px;
+$base-line-height: 1.5rem;
 $base-link-colour: #6fc2ef;
 $base-secondary-background-colour: #202020;
-$content-width: 600px;
+$content-width: 37.5rem;
+$header-font-stack: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 
 body {
   background: $base-background-colour;
   color: $base-foreground-colour;
-  // Setting the font size initially to 100% avoids the Internet Explorer 6
-  // and Internet Explorer 7 exaggerated text-resizing bug (see
-  // <http://alistapart.com/article/howtosizetextincss#section5>).
-  font: 100%/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  @if ($base-font-size != 16px) {
-    font-size: percentage($base-font-size / 16px); }
-  margin: em($base-line-height * 2, $base-font-size) auto;
-  max-width: em($content-width, $base-font-size);
-  padding: 0 em($base-line-height * 2, $base-font-size);
-  @media screen and (max-width: em($content-width, $base-font-size)) {
-    font-size: 87.5%;
-    margin: em($base-line-height / 2, $base-font-size);
+  line-height: $base-line-height;
+  margin: $base-line-height * 2 auto;
+  max-width: $content-width;
+  padding: 0 $base-line-height * 2;
+  @media screen and (max-width: $content-width) {
+    margin: $base-line-height / 2;
     padding: 0; } }
 
 a {
@@ -33,64 +26,64 @@ a {
   &:active, &:focus, &:hover, &:visited:hover {
     text-decoration: underline; } }
 
+code {
+  line-height: 1rem; }
+
 footer {
   font-style: italic;
-  margin: em($base-line-height * 2, $base-font-size) 0 0 0;
+  margin: $base-line-height * 2 0 0 0;
   text-align: center;
   hr {
     display: none; } }
 
 h1 {
-  $font-size: 32px;
-  $line-height: $font-size;
   color: $base-header-colour;
-  font-family: $helvetica;
-  font-size: em($font-size, $base-font-size);
-  line-height: em($line-height, $font-size);
+  font-family: $header-font-stack;
+  font-size: 2rem;
+  line-height: 2rem;
   margin: 0; }
 
 h2 {
-  $font-size: 24px;
-  $line-height: $font-size;
   color: $base-header-colour;
-  font-family: $helvetica;
-  font-size: em($font-size, $base-font-size);
-  line-height: em($line-height, $font-size);
-  margin: em($base-line-height, $font-size) 0 0 0; }
+  font-family: $header-font-stack;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: $base-line-height 0 0 0; }
 
 h3 {
-  $font-size: $base-font-size;
-  $line-height: $base-line-height;
-  font-family: $helvetica;
-  font-size: em($font-size, $base-font-size);
-  line-height: em($line-height, $font-size);
-  margin: em($base-line-height / 2, $font-size) 0 0 0; }
+  font-family: $header-font-stack;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: $base-line-height / 2 0 0 0; }
+
+html {
+  font-size: 100%;
+  @media screen and (max-width: $content-width) {
+    font-size: 87.5%; } }
 
 p {
-  margin: em($base-line-height / 2, $base-font-size) 0 0 0; }
+  margin: $base-line-height / 2 0 0 0; }
 
 ol {
-  margin: em($base-line-height / 2, $base-font-size) 0
-      0 em($base-line-height, $base-font-size);
+  margin: $base-line-height / 2 0 0 $base-line-height;
   padding: 0;
   & > * {
     margin: 0;
     padding: 0;
     & > ul {
-      margin: 0 0 0 em($base-line-height, $base-font-size); } } }
+      margin: 0 0 0 $base-line-height; } } }
 
 ul {
   list-style: square;
-  margin: em($base-line-height / 2, $base-font-size) 0
-      0 em($base-line-height, $base-font-size);
+  margin: $base-line-height / 2 0 0 $base-line-height;
   padding: 0;
   body > &:first-of-type {
     background: $base-secondary-background-colour;
     list-style: none;
-    margin: em($base-line-height / 2, $base-font-size) 0 0 0;
-    padding: em($base-line-height / 2, $base-font-size); }
+    margin: $base-line-height / 2 0 0 0;
+    padding: $base-line-height / 2; }
   & > * {
     margin: 0;
     padding: 0;
     & > ul {
-      margin: 0 0 0 em($base-line-height, $base-font-size); } } }
+      margin: 0 0 0 $base-line-height; } } }
