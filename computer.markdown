@@ -14,11 +14,11 @@ Setting up an Windows 10 install
   - To get a user profile folder that isn't named after your Microsoft
     account email address, create a local account when doing the
     first-time setup and then link your Microsoft account afterwards.
-  - Applications I install: 
+  - Applications I install:
     - [1Password][3];
     - [Creative Cloud][4] for Bridge, Photoshop, and Illustrator;
-    - [Lazy Nezemi Pro][5], to make drawing in Photoshop less crap; 
-    - [Bash for Windows][6] (see _Bash for Windows bits and pieces_); 
+    - [Lazy Nezemi Pro][5], to make drawing in Photoshop less crap;
+    - [Bash for Windows][6] (see _Bash for Windows bits and pieces_);
     - [Spotify][7];
     - [Chrome][8] along the with [1Password][9] and [Reddit Enhancement
       Suite][10] extensions;
