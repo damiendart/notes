@@ -14,8 +14,8 @@ Damien's Notes
   - [Synology Notes][5]: Setting up a Synology DiskStation and stuff.
 
 [3]: <https://www.robotinaponcho.net/notes/computer>
-[4]: <https://www.robotinaponcho.net/notes/synology>
-[5]: <https://www.robotinaponcho.net/notes/photoshop>
+[4]: <https://www.robotinaponcho.net/notes/photoshop>
+[5]: <https://www.robotinaponcho.net/notes/synology>
 
 ## Updates
 
