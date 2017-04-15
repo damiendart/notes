@@ -9,15 +9,17 @@ Damien's Notes
 
 ## The not-so-big list of notes
 
-  - [Synology Notes][3]: Setting up a Synology DiskStation and stuff.
+  - [Computer Notes][3]: Setting up a computer and stuff.
   - [Photoshop Notes][4]: Things I cannot be arsed committing to memory.
+  - [Synology Notes][5]: Setting up a Synology DiskStation and stuff.
 
+[3]: <https://www.robotinaponcho.net/notes/computer>
+[4]: <https://www.robotinaponcho.net/notes/synology>
+[5]: <https://www.robotinaponcho.net/notes/photoshop>
 
 ## Updates
 
-Follow along [on GitHub][5] or [with an RSS feed of Git commits][6].
+Follow along [on GitHub][6] or [with an RSS feed of Git commits][7].
 
-[3]: <https://www.robotinaponcho.net/notes/synology>
-[4]: <https://www.robotinaponcho.net/notes/photoshop>
-[5]: <https://github.com/damiendart/notes>
-[6]: <https://www.robotinaponcho.net/git/?p=notes.git;a=rss>
+[6]: <https://github.com/damiendart/notes>
+[7]: <https://www.robotinaponcho.net/git/?p=notes.git;a=rss>
