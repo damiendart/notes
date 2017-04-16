@@ -44,6 +44,9 @@ Setting up a Synology DiskStation
       Creating a daily scheduled task to run the `ntpdate -u -b
       [SOME-NTP-SERVER]` command as root seems to keep things in check.
     - Daily and weekly scheduled tasks should be run at night.
+  - Manually downloaded Python packages are regularly removed as part of
+    some updates, so when reinstalling save time by keeping any source
+    code in _~/src_ or any easily reachable folder.
   - When setting up DNS-O-Matic DDNS support in the _External Access_
     control panel, use `all.dnsomatic.com` for the hostname and replace
     any `@` characters in the username with `%30`.
