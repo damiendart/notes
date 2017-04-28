@@ -8,9 +8,10 @@
       #{File.read(File.join(File.dirname(__FILE__), "template.scss"))}
     %title= title
   %body
+    %nav
+      %hr
+      %a{:href => "https://www.robotinaponcho.net/"} www.robotinaponcho.net
+      &rarr;
+      %a{:href => "https://www.robotinaponcho.net/notes/"} Damien's Notes
     = content
-    - if not title.include? "Damien"
-      %footer
-        %hr
-        %a{:href => "https://www.robotinaponcho.net/notes/"} &larr; Damien's Notes index
     %script= `uglifyjs template.js -c --inline-script -m`

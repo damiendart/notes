@@ -39,7 +39,7 @@ FileList["*.markdown"].map { |file|
         File.read("#{document_basename}.markdown"))))
     if (!IO.popen("git log #{document_basename}.markdown").readlines.empty?)
       last_update_html = Nokogiri::XML::Node.new("li", content)
-      last_update_html.inner_html = "Last updated: <a data-timestamp=\"" +
+      last_update_html.inner_html = "<strong>Last updated</strong>: <a data-timestamp=\"" +
           `git log -n 1 --pretty=format:%at #{document_basename}.markdown` +
           "\" href=\"https://www.robotinaponcho.net/git/?p=notes.git;h=" +
           `git log -n 1 --pretty=format:%H #{document_basename}.markdown` + "\">" +

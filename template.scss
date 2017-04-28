@@ -1,9 +1,9 @@
-$base-background-colour: #151515;
-$base-foreground-colour: #d0d0d0;
-$base-header-colour: #ddb26f;
+$base-background-colour: #ffffff;
+$base-foreground-colour: #000000;
+$base-header-colour: #f96e00;
 $base-line-height: 1.5rem;
-$base-link-colour: #6fc2ef;
-$base-secondary-background-colour: #202020;
+$base-link-colour: #8383e2;
+$base-navigation-background-colour: #eee;
 $content-width: 37.5rem;
 $header-font-stack: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 
@@ -13,11 +13,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   line-height: $base-line-height;
-  margin: $base-line-height * 2 auto;
+  margin: $base-line-height * 5 auto $base-line-height * 2;
   max-width: $content-width;
   padding: 0 $base-line-height * 2;
   @media screen and (max-width: $content-width) {
-    margin: $base-line-height / 2;
+    margin: $base-line-height * 4 $base-line-height $base-line-height;
     padding: 0; } }
 
 a {
@@ -28,13 +28,6 @@ a {
 
 code {
   line-height: 1rem; }
-
-footer {
-  font-style: italic;
-  margin: $base-line-height * 2 0 0 0;
-  text-align: center;
-  hr {
-    display: none; } }
 
 h1 {
   color: $base-header-colour;
@@ -61,6 +54,18 @@ html {
   @media screen and (max-width: $content-width) {
     font-size: 87.5%; } }
 
+nav {
+  background: $base-navigation-background-colour;
+  font-weight: bold;
+  left: 0;
+  padding: $base-line-height 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  hr {
+    display: none; } }
+
 p {
   margin: $base-line-height / 2 0 0 0; }
 
@@ -78,10 +83,10 @@ ul {
   margin: $base-line-height / 2 0 0 $base-line-height;
   padding: 0;
   body > &:first-of-type {
-    background: $base-secondary-background-colour;
     list-style: none;
     margin: $base-line-height / 2 0 0 0;
-    padding: $base-line-height / 2; }
+    strong {
+      text-transform: uppercase; } }
   & > * {
     margin: 0;
     padding: 0;
