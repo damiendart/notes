@@ -82,13 +82,14 @@ ul {
   list-style: square;
   margin: $base-line-height / 2 0 0 $base-line-height;
   padding: 0;
-  body > &:first-of-type {
-    list-style: none;
-    margin: $base-line-height / 2 0 0 0;
-    strong {
-      text-transform: uppercase; } }
   & > * {
     margin: 0;
     padding: 0;
     & > ul {
       margin: 0 0 0 $base-line-height; } } }
+
+/* ul */.metadata {
+  list-style: none;
+  margin: $base-line-height / 2 0 0 0;
+  strong {
+    text-transform: uppercase; } }

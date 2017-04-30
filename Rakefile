@@ -46,13 +46,16 @@ FileList["*.markdown"].map { |file|
           `git log -n 1 --pretty=format:%aD #{document_basename}.markdown` + "</a>"
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
+    content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
     content.xpath("h1/following::ul[1]/li").sort_by { |item|
       item.content }.each { |node|
       node.parent = content.xpath("h1/following::ul")[0] }
     output = Haml::Engine.new(File.read("template.haml"), {:format => :html5,
         :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
         {:author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
-        :content => content.to_html, :title => content.xpath("h1")[0].content })
+        :content => (task.name == "index.html" ?
+            content.xpath("h1/following-sibling::ul")[0].remove && content.to_html : content.to_html),
+        :title => content.xpath("h1")[0].content })
     output = output.gsub(/^[\s]*$\n/, "")
     output = output.gsub(%r{^\s*//.*\n}, "")
     stdin, stdout, stderr = Open3.popen3("html-minifier --remove-comments " +
