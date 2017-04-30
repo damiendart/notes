@@ -66,7 +66,7 @@ Miscellaneous things
 
   - The _Task Scheduler_ control panel in DSM doesn't tell you whether a
     task's last run failed or succeeded.  Running the command
-    `synoschedtask --get` provides more information about tasks,
+    `synoschedtask --get` provides detailed information about tasks,
     including their last run statuses.
   - Extracting _tar.gz_ files with tar: `tar -zxvf [FILENAME]` (I'm
     always forgetting the combination of flags).
