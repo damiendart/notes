@@ -7,7 +7,7 @@ Damien's Notes
 [1]: <https://www.robotinaponcho.net/>
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
-## The not-so-big list of notes
+Notes on various things. Don't expect much.
 
   - [Computer Notes][3]: Setting up a computer and stuff.
   - [Photoshop Notes][4]: Things I cannot be arsed committing to memory.

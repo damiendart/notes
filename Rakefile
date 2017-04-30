@@ -54,7 +54,7 @@ FileList["*.markdown"].map { |file|
         :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
         {:author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
         :content => (task.name == "index.html" ?
-            content.xpath("h1/following-sibling::ul")[0].remove && content.to_html : content.to_html),
+            content.xpath("ul[contains(@class,\"metadata\")]")[0].remove && content.to_html : content.to_html),
         :title => content.xpath("h1")[0].content })
     output = output.gsub(/^[\s]*$\n/, "")
     output = output.gsub(%r{^\s*//.*\n}, "")
