@@ -3,7 +3,6 @@ $base-foreground-colour: #000000;
 $base-header-colour: #f96e00;
 $base-line-height: 1.5rem;
 $base-link-colour: #8383e2;
-$base-navigation-background-colour: #eee;
 $content-width: 43.5rem;
 $header-font-stack: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 
@@ -14,7 +13,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   line-height: $base-line-height;
-  margin: $base-line-height * 5 auto $base-line-height * 2;
+  margin: $base-line-height * 2 auto;
   max-width: $content-width;
   padding: 0 $base-line-height * 2;
   // Webkit on iOS devices (at least the ones I've tried) require the
@@ -23,7 +22,7 @@ body {
   -ms-text-size-adjust: 100%; // Just In Case(tm).
   text-size-adjust: none;
   @media only screen and (max-width: 768px) {
-    margin: $base-line-height * 4 auto $base-line-height;
+    margin: $base-line-height auto;
     padding: 0 $base-line-height; } }
 
 a {
@@ -61,14 +60,9 @@ html {
     font-size: 87.5%; } }
 
 nav {
-  background: $base-navigation-background-colour;
-  font-weight: bold;
-  left: 0;
-  padding: $base-line-height 0;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100%;
+  border-bottom: 1 / 16 * 1rem solid #eee;
+  margin: 0 0 $base-line-height 0;
+  padding: 0 0 ($base-line-height - (1 / 16 * 1rem)) 0;
   hr {
     display: none; } }
 
