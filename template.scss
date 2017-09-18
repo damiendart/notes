@@ -64,7 +64,10 @@ nav {
   margin: 0 0 $base-line-height 0;
   padding: 0 0 ($base-line-height - (1 / 16 * 1rem)) 0;
   hr {
-    display: none; } }
+    display: none; }
+  @media only screen and (max-width: 320px) {
+    span {
+      display: none; } } }
 
 p {
   margin: $base-line-height / 2 0 0 0; }
