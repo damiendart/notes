@@ -31,9 +31,10 @@ Setting up an Windows 10 install
   - Applications I put in a _bin_ folder in my user profile folder:
     [FlippyWindow][15] (once I've compiled it), [gVim][16],
     [ngrok][17], and [PuTTY][18].
-  - Applications I don't use anymore:
+  - Applications I don't need or use anymore:
     - [f.lux][19], as there's a similar built-in feature called Night
-      Light that appeared with the Creators Update.
+      Light that appeared with the Creators Update; and
+    - [Geforce Experience][20].
 
 [3]: <https://1password.com/>
 [4]: <http://www.adobe.com/uk/>
@@ -52,6 +53,7 @@ Setting up an Windows 10 install
 [17]: <https://ngrok.com/>
 [18]: <http://www.chiark.greenend.org.uk/~sgtatham/putty/>
 [19]: <https://justgetflux.com/>
+[20]: <https://www.nvidia.co.uk/geforce/geforce-experience/>
 
 
 Bash for Windows bits and pieces
