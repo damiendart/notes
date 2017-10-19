@@ -11,9 +11,6 @@ Computer Notes
 Setting up an Windows 10 install
 --------------------------------
 
-  - To get a user profile folder that isn't named after your Microsoft
-    account email address, create a local account when doing the
-    first-time setup and then link your Microsoft account afterwards.
   - Applications I install:
     - [1Password][3];
     - [Creative Cloud][4] for Bridge, Photoshop, and Illustrator;
