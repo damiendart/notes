@@ -8,7 +8,7 @@ Adobe Illustrator Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Things I constantly forget to do 
+Things I constantly forget to do
 --------------------------------
 
   - Check the document colour mode is set correctly.
