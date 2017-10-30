@@ -31,18 +31,18 @@ Converting pencil artwork to non-repro blue
      and printer output.
 
 
-Cleaning up line-art
+Cleaning up line art
 --------------------
 
-  1. Clean up the scanned lineart in Photoshop with adjustment layers:
+  1. Clean up the scanned line art in Photoshop with adjustment layers:
      -  Remove any non-repro blue underdrawings with a _Hue/Saturation_
         adjustment layer. After choosing the _Cyans_ colour range in the
         _Properties_ panel, set the saturation to minimimum and
         lightness to maximum.
      -  Use _Curves_ and/or _Levels_ adjustment layers to improve the
         line quality and whites, and remove any remaining underdrawings.
-     -  For inked lineart, use a _Threshold_ adjustment layer to convert
-        the lineart to black-and-white bitmap.
+     -  For inked line art, use a _Threshold_ adjustment layer to
+        convert the line art to black-and-white bitmap.
   2. At the bottom of the _Channels_ palette, click on _Load channel as
      selection_ to create a selection of the white areas of the image.
   3. Invert the selection.
