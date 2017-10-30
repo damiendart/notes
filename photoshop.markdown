@@ -8,6 +8,17 @@ Photoshop Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
+Current brushes of choice
+-------------------------
+
+From Kyle T Webster's Megapack:
+
+  - For line art, _Kyle's Inkbox - Badass Brush_ at 35 pixels.
+  - For colouring, _Kyle's Inkbox - Roughest Ink No Alias_ at 40 pixels.
+
+The brush sizes assume a document with a resolution of 300 DPI.
+
+
 Converting pencil artwork to non-repro blue
 -------------------------------------------
 
