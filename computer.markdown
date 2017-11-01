@@ -32,6 +32,8 @@ Setting up an Windows 10 install
     - [f.lux][19], as there's a similar built-in feature called Night
       Light that appeared with the Creators Update; and
     - [Geforce Experience][20].
+  - Drivers I manually install:
+    - [GeForce Game Ready 388.13 WHQL drivers][21]: no issues so far.
 
 [3]: <https://1password.com/>
 [4]: <http://www.adobe.com/uk/>
@@ -51,6 +53,7 @@ Setting up an Windows 10 install
 [18]: <http://www.chiark.greenend.org.uk/~sgtatham/putty/>
 [19]: <https://justgetflux.com/>
 [20]: <https://www.nvidia.co.uk/geforce/geforce-experience/>
+[21]: <https://www.geforce.com/drivers>
 
 
 Bash for Windows bits and pieces
