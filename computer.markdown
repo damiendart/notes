@@ -20,18 +20,16 @@ Setting up an Windows 10 install
     - [Chrome][8] along the with [1Password][9] and [Reddit Enhancement
       Suite][10] extensions;
     - [Firefox][11], for testing web stuff;
-    - [Steam][12];
-    - [Visual Studio 15][13]; and
-    - [VueScan][14], only because the stock scanning interface on my
-      previous system went to shit after a random update (I might not
-      need this anymore).
+    - [Steam][12] and;
+    - [Visual Studio 15][13].
   - Applications I put in a _bin_ folder in my user profile folder:
-    [FlippyWindow][15] (once I've compiled it), [gVim][16],
-    [ngrok][17], and [PuTTY][18].
+    [FlippyWindow][14] (once I've compiled it), [gVim][15],
+    [ngrok][16], and [PuTTY][17].
   - Applications I don't need or use anymore:
-    - [f.lux][19], as there's a similar built-in feature called Night
-      Light that appeared with the Creators Update; and
-    - [Geforce Experience][20].
+    - [f.lux][18], as there's a similar built-in feature called Night
+      Light that appeared with the Creators Update;
+    - [Geforce Experience][19]; and
+    - [VueScan][20].
   - Drivers I manually install:
     - [GeForce Game Ready 388.13 WHQL drivers][21]: no issues so far.
 
@@ -46,13 +44,13 @@ Setting up an Windows 10 install
 [11]: <https://www.mozilla.org/en-GB/firefox/new/>
 [12]: <http://store.steampowered.com/>
 [13]: <https://www.visualstudio.com/>
-[14]: <https://www.hamrick.com/>
-[15]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
-[16]: <https://vim.sourceforge.io/>
-[17]: <https://ngrok.com/>
-[18]: <http://www.chiark.greenend.org.uk/~sgtatham/putty/>
-[19]: <https://justgetflux.com/>
-[20]: <https://www.nvidia.co.uk/geforce/geforce-experience/>
+[14]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
+[15]: <https://vim.sourceforge.io/>
+[16]: <https://ngrok.com/>
+[17]: <http://www.chiark.greenend.org.uk/~sgtatham/putty/>
+[18]: <https://justgetflux.com/>
+[19]: <https://www.nvidia.co.uk/geforce/geforce-experience/>
+[20]: <https://www.hamrick.com/>
 [21]: <https://www.geforce.com/drivers>
 
 
