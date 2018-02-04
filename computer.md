@@ -1,3 +1,11 @@
+---
+layout: base
+page_description: View Damien Dart's notes on how he sets up computers.
+page_slug: "notes/computer"
+page_title: Computer Notes
+---
+
+
 Computer Notes
 ==============
 

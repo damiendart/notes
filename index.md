@@ -1,3 +1,11 @@
+---
+layout: base
+page_description: View Damien Dart's notes on various things.
+page_slug: "notes/"
+page_title: Damien's Notes
+---
+
+
 Damien's Notes
 ==============
 

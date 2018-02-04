@@ -1,3 +1,11 @@
+---
+layout: base
+page_description: View Damien Dart's notes on Synology devices.
+page_slug: "notes/synology"
+page_title: Synology Notes
+---
+
+
 Synology Notes
 ==============
 

@@ -1,3 +1,10 @@
+---
+layout: base
+page_description: View Damien Dart's notes on Photoshop.
+page_slug: "notes/photoshop"
+page_title: Photoshop Notes
+---
+
 Photoshop Notes
 ===============
 

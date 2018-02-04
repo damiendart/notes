@@ -1,3 +1,11 @@
+---
+layout: base
+page_description: View Damien Dart's notes on Adobe Illustrator.
+page_slug: "notes/illustrator"
+page_title: Adobe Illustrator Notes
+---
+
+
 Adobe Illustrator Notes
 =======================
 
