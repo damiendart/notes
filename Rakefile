@@ -25,25 +25,25 @@ Haml::Filters::Scss.options[:cache] = false
 Haml::Filters::Scss.options[:style] = :compressed
 
 CLOBBER.include(FileList["*.html"])
-task :default => FileList["*.markdown"].map { |file|
-    File.basename(file, ".markdown") + ".html" }
+task :default => FileList["*.md"].map { |file|
+    File.basename(file, ".md") + ".html" }
 
-FileList["*.markdown"].map { |file|
-    File.basename(file, ".markdown") }.each do |document_basename|
+FileList["*.md"].map { |file|
+    File.basename(file, ".md") }.each do |document_basename|
   desc "Spit out \"#{document_basename}.html\"."
   file "#{document_basename}.html" => FileList["Rakefile",
-      "#{document_basename}.markdown", "template.*"] do |task|
+      "#{document_basename}.md", "template.*"] do |task|
     puts "# Spitting out \"#{task.name}\"."
     content = Nokogiri::HTML.fragment(Redcarpet::Render::SmartyPants.render(
         Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
-        File.read("#{document_basename}.markdown"))))
-    if (!IO.popen("git log #{document_basename}.markdown").readlines.empty?)
+        File.read("#{document_basename}.md"))))
+    if (!IO.popen("git log #{document_basename}.md").readlines.empty?)
       last_update_html = Nokogiri::XML::Node.new("li", content)
       last_update_html.inner_html = "<strong>Last updated</strong>: <a data-timestamp=\"" +
-          `git log -n 1 --pretty=format:%at #{document_basename}.markdown` +
+          `git log -n 1 --pretty=format:%at #{document_basename}.md` +
           "\" href=\"https://www.robotinaponcho.net/git/?p=notes.git;h=" +
-          `git log -n 1 --pretty=format:%H #{document_basename}.markdown` + "\">" +
-          `git log -n 1 --pretty=format:%aD #{document_basename}.markdown` + "</a>"
+          `git log -n 1 --pretty=format:%H #{document_basename}.md` + "\">" +
+          `git log -n 1 --pretty=format:%aD #{document_basename}.md` + "</a>"
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
     content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
