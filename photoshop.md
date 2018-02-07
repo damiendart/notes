@@ -1,18 +1,21 @@
 ---
-layout: base
+file_comment: |
+  "photoshop.md" from Damien Dart's notes.
+
+  Copyright (C) 2014-2018 Damien Dart, <damiendart@pobox.com>.
+  This work is licensed under the Creative Commons Attribution 4.0
+  International License. To view a copy of this license, visit
+  <http://creativecommons.org/licenses/by/4.0/> or send a letter to
+  Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+layout: note
 page_description: View Damien Dart's notes on Photoshop.
-page_slug: "notes/photoshop"
-page_title: Photoshop Notes
+page_licence: Creative Commons Attribution 4.0 International License
+page_licence_website: "http://creativecommons.org/licenses/by/4.0/"
 ---
+
 
 Photoshop Notes
 ===============
-
-  - **Author**: [Damien Dart][1], <damiendart@pobox.com>
-  - **Licence**: [Creative Commons Attribution 4.0 International License][2]
-
-[1]: <https://www.robotinaponcho.net/>
-[2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
 Current brushes of choice
@@ -63,8 +66,8 @@ Cleaning up line art
 Image filesize reduction techniques
 -----------------------------------
 
-  - Use [ExifTool][3] and [jpegtran][3] to reduce JPEG image filesizes:
+  - Use [ExifTool][1] and [jpegtran][1] to reduce JPEG image filesizes:
     `jpegtran -optimize -progressive [IMAGE] > [OUTPUT] &&
     exiftool -all= --icc_profile:all [OUTPUT]`.
 
-[3]: <http://jpegclub.org/jpegtran/>
+[1]: <http://jpegclub.org/jpegtran/>
