@@ -1,0 +1,29 @@
+-#
+  ---
+  file_comment: |
+    "index.haml" for Damien Dart's notes.
+
+    Copyright (C) 2013-2018 Damien Dart, <damiendart@pobox.com>.
+    This file is distributed under the MIT licence. For more information,
+    please refer to the accompanying "LICENCE" file.
+  layout: base
+  layout_javascript: note.js
+  page_description: View Damien Dart's notes on various things.
+  page_title: Damien Dart's Notes
+  ---
+
+
+.markdown
+  %h1 Notes
+  %p Notes on various things, mainly for my benefit. Don't expect much.
+  %ul
+    - pages.each do |page|
+      - if page["page_slug"] =~ /notes\/.+/
+        %li <a href="#{page["page_url"]}">#{page["page_title"]}</a>, last updated <a data-timestamp="#{page["page_git_last_commit_timestamp"]}" href="#{site_url}git/?p=notes.git;h=#{page["page_git_last_commit_hash"]}">#{page["page_git_last_commit_datetime"]}</a>.
+  :markdown
+    ## Updates
+
+    Follow along [on GitHub][1] or [with an RSS feed of Git commits][2].
+
+    [1]: <https://github.com/damiendart/notes>
+    [2]: <https://www.robotinaponcho.net/git/?p=notes.git;a=rss>
