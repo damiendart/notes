@@ -16,10 +16,19 @@
 .markdown
   %h1 Notes
   %p Notes on various things, mainly for my benefit. Don't expect much.
-  %ul
-    - pages.each do |page|
-      - if page["page_slug"] =~ /notes\/.+/
-        %li <a href="#{page["page_url"]}">#{page["page_title"]}</a>, last updated <a data-timestamp="#{page["page_git_last_commit_timestamp"]}" href="#{site_url}git/?p=notes.git;h=#{page["page_git_last_commit_hash"]}">#{page["page_git_last_commit_datetime"]}</a>.
+  %table.note-list
+    %thead
+      %tr
+        %th Note
+        %th Last modified
+    %tbody
+      - pages.each do |page|
+        - if page["page_slug"] =~ /notes\/.+/
+          %tr 
+            %td
+              %a{:href => page["page_url"]}= page["page_title"]
+            %td
+              %a{:"data-timestamp" => page["page_git_last_commit_timestamp"], :href => "#{site_url}git/?p=notes.git;h=#{page["page_git_last_commit_hash"]}"}= page["page_git_last_commit_datetime"]
   :markdown
     ## Updates
 
