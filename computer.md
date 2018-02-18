@@ -62,7 +62,7 @@ Setting up an Windows 10 install
 [16]: <http://www.chiark.greenend.org.uk/~sgtatham/putty/>
 [17]: <https://justgetflux.com/>
 [18]: <https://www.nvidia.co.uk/geforce/geforce-experience/>
-[21]: <https://www.hamrick.com/>
+[19]: <https://www.hamrick.com/>
 [20]: <https://www.geforce.com/drivers>
 
 
