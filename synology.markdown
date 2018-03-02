@@ -1,20 +1,11 @@
----
-file_comment: |
-  "synology.md" from Damien Dart's notes.
-
-  Copyright (C) 2014-2018 Damien Dart, <damiendart@pobox.com>.
-  This work is licensed under the Creative Commons Attribution 4.0
-  International License. To view a copy of this license, visit
-  <http://creativecommons.org/licenses/by/4.0/> or send a letter to
-  Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-layout: note
-page_description: View Damien Dart's notes on Synology devices.
-page_licence: Creative Commons Attribution 4.0 International License
-page_licence_website: "http://creativecommons.org/licenses/by/4.0/"
----
-
 Synology Notes
 ==============
+
+  - **Author**: [Damien Dart][1], <damiendart@pobox.com>
+  - **Licence**: [Creative Commons Attribution 4.0 International License][2]
+
+[1]: <https://www.robotinaponcho.net/>
+[2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
 Setting up a Synology DiskStation
@@ -38,16 +29,16 @@ Setting up a Synology DiskStation
     and enable the regular scan schedule to perform a weekly scan.
   - Make sure daily backup stuff (S3, external hard-drive) is set up.
   - Git from the _Package Center_ in DSM craps out whenever you tried to
-    do anything via HTTPS. Fortunately, the [solution is simple][1]:
-    download [a recent CA Root certificate bundle][2] to your
+    do anything via HTTPS. Fortunately, the [solution is simple][3]:
+    download [a recent CA Root certificate bundle][4] to your
     DiskStation and point Git to it by setting `http.sslCAinfo` to the
     location of that file in your global or system-wide _.gitignore_.
   - Set up custom scheduled tasks.
-    - Use [getmail][3] to backup email every three hours.
-    - Use [mirrorgithub][4] to backup public GitHub repositories daily.
-    - Run [nfsnddns][5] hourly to have poor-man's dynamic DNS
+    - Use [getmail][5] to backup email every three hours.
+    - Use [mirrorgithub][6] to backup public GitHub repositories daily.
+    - Run [nfsnddns][7] hourly to have poor-man's dynamic DNS
       functionality with NearlyFreeSpeech.NET-managed domains.
-    - Use [pinboardbackup][6] to backup Pinboard bookmarks daily.
+    - Use [pinboardbackup][8] to backup Pinboard bookmarks daily.
     - Even with NTP synchronisation enabled in DSM's _Regional Options_
       control panel the date and time will occasionally get out of sync.
       Creating a daily scheduled task to run the `ntpdate -u -b
@@ -63,12 +54,12 @@ Setting up a Synology DiskStation
     _Advanced_ tab in the _External Access_ control panel is filled out
     so that correct URLs are generated.
 
-[1]: <http://stackoverflow.com/a/8467406>
-[2]: <http://curl.haxx.se/ca/cacert.pem>
-[3]: <http://pyropus.ca/software/getmail/>
-[4]: <https://www.robotinaponcho.net/git/?p=robotinaponcho.git;a=blob;f=bin/mirrorgithub>
-[5]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns>
-[6]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=pinboardbackup>
+[3]: <http://stackoverflow.com/a/8467406>
+[4]: <http://curl.haxx.se/ca/cacert.pem>
+[5]: <http://pyropus.ca/software/getmail/>
+[6]: <https://www.robotinaponcho.net/git/?p=robotinaponcho.git;a=blob;f=www/private/mirrorgithub;hb=HEAD>
+[7]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns;hb=HEAD>
+[8]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=pinboardbackup;hb=HEAD>
 
 Miscellaneous things
 --------------------
