@@ -57,9 +57,9 @@ Setting up a Synology DiskStation
 [3]: <http://stackoverflow.com/a/8467406>
 [4]: <http://curl.haxx.se/ca/cacert.pem>
 [5]: <http://pyropus.ca/software/getmail/>
-[6]: <https://www.robotinaponcho.net/git/?p=robotinaponcho.git;a=blob;f=bin/mirrorgithub;hb=HEAD>
-[7]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns;hb=HEAD>
-[8]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=pinboardbackup;hb=HEAD>
+[6]: <https://www.robotinaponcho.net/git/?p=robotinaponcho.git;a=blob;f=bin/mirrorgithub>
+[7]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=nfsnddns>
+[8]: <https://www.robotinaponcho.net/git/?p=toolbox.git;a=blob;f=pinboardbackup>
 
 Miscellaneous things
 --------------------
