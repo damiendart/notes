@@ -44,7 +44,11 @@ FileList["*.markdown"].map do |file|
     content.xpath("h1/following::ul[1]/li").sort_by{ |i| i.content }.each { |node|
         node.parent = content.xpath("h1/following::ul")[0] }
     stdin, stdout, stderr = Open3.popen3("html-minifier --remove-comments " +
-        "--minify-js --minify-css --decode-entities --collapse-whitespace -o #{task.name}")
+        "--minify-js --minify-css --decode-entities --collapse-whitespace " +
+        "--minify-ur-ls https://www.robotinaponcho.net/notes/#{basename} " +
+        # HACK: Decode semi-colons and equals signs in GitWeb-related
+        # URLs with sed after the HTML minification encodes them.
+        "-o #{task.name} && sed -i 's/%3B/;/g; s/%3D/=/g' #{task.name}")
     stdin.puts(Haml::Engine.new(File.read("template.haml")).render(Object.new, {
         :author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
         :basename => basename,
