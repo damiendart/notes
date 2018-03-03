@@ -14,4 +14,4 @@
       &rarr;
       %a{:href => "https://www.robotinaponcho.net/notes/"} <span>Damien's </span>Notes
     = content
-    %script= `uglifyjs template.js -c --inline-script -m`
+    %script= File.read("template.js")
