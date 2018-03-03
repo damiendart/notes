@@ -37,7 +37,7 @@ FileList["*.markdown"].map do |file|
           `git log -n 1 --pretty=format:%at #{file}` +
           "\" href=\"https://www.robotinaponcho.net/git/?p=notes.git;h=" +
           `git log -n 1 --pretty=format:%H #{file}` + "\">" +
-          `git log -n 1 --pretty=format:%aD #{file}` + "</a>"
+          `git log -n 1 --date=short --pretty=format:%ad #{file}` + "</a>"
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
     content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
