@@ -2,6 +2,8 @@ Synology Notes
 ==============
 
   - **Author**: [Damien Dart][1], <damiendart@pobox.com>
+  - **Description**: Damien Dart's notes on setting up, using, and
+    troubleshooting Synology DiskStations.
   - **Licence**: [Creative Commons Attribution 4.0 International License][2]
 
 [1]: <https://www.robotinaponcho.net/>

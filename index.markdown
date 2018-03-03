@@ -2,6 +2,7 @@ Damien's Notes
 ==============
 
   - **Author**: [Damien Dart][1], <damiendart@pobox.com>
+  - **Description**: View Damien Dart's notes.
   - **Licence**: [Creative Commons Attribution 4.0 International License][2]
 
 [1]: <https://www.robotinaponcho.net/>

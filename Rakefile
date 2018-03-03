@@ -30,30 +30,27 @@ FileList["*.markdown"].map do |file|
     puts "# Spitting out \"#{task.name}\"."
     content = Nokogiri::HTML.fragment(
         Redcarpet::Render::SmartyPants.render(
-            Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(
-                File.read("#{basename}.markdown"))))
-    if (!IO.popen("git log #{basename}.markdown").readlines.empty?)
+            Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(File.read(file))))
+    if (!IO.popen("git log #{file}").readlines.empty?)
       last_update_html = Nokogiri::XML::Node.new("li", content)
       last_update_html.inner_html = "<strong>Last updated</strong>: <a data-timestamp=\"" +
-          `git log -n 1 --pretty=format:%at #{basename}.markdown` +
+          `git log -n 1 --pretty=format:%at #{file}` +
           "\" href=\"https://www.robotinaponcho.net/git/?p=notes.git;h=" +
-          `git log -n 1 --pretty=format:%H #{basename}.markdown` + "\">" +
-          `git log -n 1 --pretty=format:%aD #{basename}.markdown` + "</a>"
+          `git log -n 1 --pretty=format:%H #{file}` + "\">" +
+          `git log -n 1 --pretty=format:%aD #{file}` + "</a>"
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
     content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
-    content.xpath("h1/following::ul[1]/li").sort_by { |item|
-        item.content }.each { |node|
-            node.parent = content.xpath("h1/following::ul")[0] }
-    output = Haml::Engine.new(File.read("template.haml"), {
-        :escape_attrs => false, :attr_wrapper => "\""}).render(Object.new,
-        {:author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
-        :content => (task.name == "index.html" ?
-            content.xpath("ul[contains(@class,\"metadata\")]")[0].remove && content.to_html : content.to_html),
-        :title => content.xpath("h1")[0].content })
+    content.xpath("h1/following::ul[1]/li").sort_by{ |i| i.content }.each { |node|
+        node.parent = content.xpath("h1/following::ul")[0] }
     stdin, stdout, stderr = Open3.popen3("html-minifier --remove-comments " +
         "--minify-js --minify-css --decode-entities --collapse-whitespace -o #{task.name}")
-    stdin.puts(output)
+    stdin.puts(Haml::Engine.new(File.read("template.haml")).render(Object.new, {
+        :author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
+        :basename => basename,
+        :description => content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1],
+        :title => content.xpath("h1")[0].content,
+        :content => (task.name == "index.html" ? content.xpath("ul[contains(@class,\"metadata\")]")[0].remove && content.to_html : content.to_html)}))
   end
 end
 
