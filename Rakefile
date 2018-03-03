@@ -52,7 +52,7 @@ FileList["*.markdown"].map do |file|
     stdin.puts(Haml::Engine.new(File.read("template.haml")).render(Object.new, {
         :author => content.xpath("h1/following-sibling::ul/li[contains(.,\"Author\")]")[0].content[/: (.*),/, 1],
         :basename => basename,
-        :description => content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1],
+        :description => content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1].gsub(/\n/," "),
         :title => content.xpath("h1")[0].content,
         :content => (task.name == "index.html" ? content.xpath("ul[contains(@class,\"metadata\")]")[0].remove && content.to_html : content.to_html)}))
   end
