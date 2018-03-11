@@ -9,8 +9,8 @@ Adobe Illustrator Notes
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 
-Things I constantly forget to do
---------------------------------
+Miscellaneous notes
+-------------------
 
   - Check the document colour mode is set correctly.
   - Occasionally run the _Delete Unused Panel Items_ action (located in
