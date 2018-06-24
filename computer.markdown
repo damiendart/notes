@@ -48,7 +48,7 @@ Setting up an Windows 10 install
 [12]: <https://www.mozilla.org/en-GB/firefox/new/>
 [13]: <http://store.steampowered.com/>
 [14]: <https://www.visualstudio.com/>
-[15]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
+[15]: <https://www.robotinaponcho.net/flippywindow/>
 [16]: <https://vim.sourceforge.io/>
 [17]: <https://ngrok.com/>
 [18]: <http://www.chiark.greenend.org.uk/~sgtatham/putty/>
