@@ -61,6 +61,11 @@ Setting up an Windows 10 install
 Bash for Windows bits and pieces
 --------------------------------
 
+  - The Windows console uses a dark blue to colour some text, which
+    isn't ideal against a black background. It's particularly bad when
+    reading comments in Vim's default colour scheme, so a quick fix is
+    to change the colour scheme Vim uses (I use the desert theme).
+
 
 Miscellaneous notes
 -------------------
