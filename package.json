@@ -1,0 +1,9 @@
+{
+  "//": "See <https://github.com/sass/dart-sass/issues/380>.",
+  "dependencies": {
+    "autoprefixer": "*",
+    "html-minifier": "*",
+    "postcss-cli": "*",
+    "sass": "1.6.2"
+  }
+}

@@ -11,7 +11,7 @@
     %meta{:content => "website", :property => "og:type"}
     %meta{:content => "https://www.robotinaponcho.net/notes/#{basename}", :property => "og:url"}
     %meta{:content => "initial-scale=1.0, width=device-width", "name" => "viewport"}
-    :scss
+    :autoprefixscss
       #{File.read(File.join(File.dirname(__FILE__), "template.scss"))}
     %title #{title} (www.robotinaponcho.net)
   %body
