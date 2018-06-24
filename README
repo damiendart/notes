@@ -10,20 +10,16 @@ notes on [my personal website][1].
 [1]: <https://www.robotinaponcho.net/notes/>
 
 If, for whatever reason, you want to play around with the janky
-publish-to-HTML thing: [globally][2] install [html-minifier][3] and
-[UglifyJS][4], fetch the necessary Ruby dependencies (see _Gemfile_),
-and then run `rake` to generate HTML versions of my notes. See
-_Rakefile_ for information on the note format. 
-
-[2]: <https://docs.npmjs.com/getting-started/installing-npm-packages-globally>
-[3]: <https://www.npmjs.com/package/html-minifier>
-[4]: <https://github.com/mishoo/UglifyJS2>
+publish-to-HTML thing: fetch the necessary JavaScript and Ruby
+dependencies (see _package.json_ and _Gemfile_), and then run `rake` to
+generate HTML versions of my notes. See _Rakefile_ for information on
+the note format. 
 
 The script and accompanying template files are free and unencumbered
 software released into the public domain (see the accompanying
 "UNLICENCE" file for more information) and the notes are licensed under
-a [Creative Commons Attribution 4.0 International License][5].
+a [Creative Commons Attribution 4.0 International License][2].
 
-[5]: <http://creativecommons.org/licenses/by/4.0/>
+[2]: <http://creativecommons.org/licenses/by/4.0/>
 
 -- Damien
