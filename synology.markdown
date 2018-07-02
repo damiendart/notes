@@ -55,6 +55,7 @@ Setting up a Synology DiskStation
   - If using _File Station_'s shared links functionality, ensure the
     _Advanced_ tab in the _External Access_ control panel is filled out
     so that correct URLs are generated.
+  - Enable bad sector and disk lifespan warnings in _Storage Manager_.
 
 [3]: <http://stackoverflow.com/a/8467406>
 [4]: <http://curl.haxx.se/ca/cacert.pem>
