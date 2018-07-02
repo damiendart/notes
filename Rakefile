@@ -25,8 +25,8 @@ Bundler.require(:default)
 module Haml::Filters::AutoPrefixScss
   include Haml::Filters::Base
   def render(text)
-    stdin, stdout, stderr = Open3.popen3("./node_modules/.bin/sass --stdin | " +
-        "./node_modules/.bin/postcss --use autoprefixer")
+    stdin, stdout, stderr = Open3.popen3(
+        "npx sass --stdin | npx postcss --use autoprefixer")
     stdin.puts(text)
     stdin.close
     "<style>#{stdout.read}</style>"
@@ -55,7 +55,7 @@ FileList["*.markdown"].map do |file|
     content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
     content.xpath("h1/following::ul[1]/li").sort_by{ |i| i.content }.each { |node|
         node.parent = content.xpath("h1/following::ul")[0] }
-    stdin, stdout, stderr = Open3.popen3("./node_modules/.bin/html-minifier --remove-comments " +
+    stdin, stdout, stderr = Open3.popen3("npx html-minifier --remove-comments " +
         "--minify-js --minify-css --decode-entities --collapse-whitespace " +
         "--minify-ur-ls https://www.robotinaponcho.net/notes/#{basename} " +
         # HACK: Decode semi-colons and equals signs in GitWeb-related
