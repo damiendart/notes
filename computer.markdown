@@ -26,8 +26,7 @@ Setting up an Windows 10 install
     - [Steam][13] and;
     - [Visual Studio 15][14].
   - Applications I put in a _bin_ folder in my user profile folder:
-    [FlippyWindow][15] (once I've compiled it), [gVim][16],
-    [ngrok][17], and [PuTTY][18].
+    [FlippyWindow][15], [gVim][16], [ngrok][17], and [PuTTY][18].
   - Applications I don't need or use anymore:
     - [f.lux][19], as there's a similar built-in feature called Night
       Light that appeared with the Creators Update;
