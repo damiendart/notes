@@ -1,24 +1,18 @@
 Damien's Notes
 ==============
 
-A bunch of notes about stuff and a janky publish-to-HTML script.
+A bunch of notes about stuff.
 
-You'll most likely want just the Markdown files; everything else is
-mainly for my own benefit and allows me to publish HTML versions of my
+You'll most likely want just the Markdown files; the _Rakefile_ provided
+is for my own benefit as it allows me to publish HTML versions of my
 notes on [my personal website][1].
 
 [1]: <https://www.robotinaponcho.net/notes/>
 
-If, for whatever reason, you want to play around with the janky
-publish-to-HTML thing: fetch the necessary JavaScript and Ruby
-dependencies (see _package.json_ and _Gemfile_), and then run `rake` to
-generate HTML versions of my notes. See _Rakefile_ for information on
-the note format. 
-
-The script and accompanying template files are free and unencumbered
-software released into the public domain (see the accompanying
-"UNLICENCE" file for more information) and the notes are licensed under
-a [Creative Commons Attribution 4.0 International License][2].
+The script is free and unencumbered software released into the public
+domain (see the accompanying "UNLICENCE" file for more information) and
+the notes are licensed under a [Creative Commons Attribution 4.0
+International License][2].
 
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
