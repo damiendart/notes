@@ -22,7 +22,7 @@ Notes on various things. Don't expect much.
 
 ## Updates
 
-Follow along [on GitHub][7] or [with an RSS feed of Git commits][8].
+Follow along [using Git][7] or [on GitHub][8].
 
-[7]: <https://github.com/damiendart/notes>
-[8]: <https://www.robotinaponcho.net/git/?p=notes.git;a=rss>
+[7]: <https://www.robotinaponcho.net/git/#notes>
+[8]: <https://github.com/damiendart/notes>
