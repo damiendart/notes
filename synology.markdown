@@ -38,9 +38,7 @@ Setting up a Synology DiskStation
   - Set up custom scheduled tasks.
     - Use [getmail][5] to backup email every three hours.
     - Use [mirrorgithub][6] to backup public GitHub repositories daily.
-    - Run [nfsnddns][7] hourly to have poor-man's dynamic DNS
-      functionality with NearlyFreeSpeech.NET-managed domains.
-    - Use [pinboardbackup][8] to backup Pinboard bookmarks daily.
+    - Use [pinboardbackup][7] to backup Pinboard bookmarks daily.
     - Even with NTP synchronisation enabled in DSM's _Regional Options_
       control panel the date and time will occasionally get out of sync.
       Creating a daily scheduled task to run the `ntpdate -u -b
@@ -62,7 +60,6 @@ Setting up a Synology DiskStation
 [5]: <http://pyropus.ca/software/getmail/>
 [6]: <https://www.robotinaponcho.net/git/#robotinaponcho>
 [7]: <https://www.robotinaponcho.net/git/#toolbox>
-[8]: <https://www.robotinaponcho.net/git/#toolbox>
 
 Miscellaneous things
 --------------------
