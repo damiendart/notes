@@ -24,8 +24,11 @@ require "rubygems"
 Bundler.require(:default)
 
 
+OUTPUT_DIRECTORY = ENV["NOTES_OUTPUT"] || "./"
+
+
 FileList["*.markdown"].map do |file|
-  CLOBBER << file.ext("haml")
+  CLOBBER << File.join(OUTPUT_DIRECTORY, file.ext("haml"))
   desc "Spit out \"#{CLOBBER.last}\"."
   file CLOBBER.last => FileList[file, "Rakefile"] do |task|
     puts "# Spitting out \"#{task.name}\"."
@@ -41,7 +44,7 @@ FileList["*.markdown"].map do |file|
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
     description = content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1].gsub(/\n/," ")
-    if (task.name == "index.haml")
+    if (task.name.end_with?"index.haml")
       content.xpath("h1/following-sibling::ul")[0].remove
     else
       content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
