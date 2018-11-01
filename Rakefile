@@ -25,30 +25,28 @@ Bundler.require(:default)
 
 
 FileList["*.markdown"].map do |file|
-  basename = File.basename(file, ".markdown")
-  CLOBBER << "#{basename}.haml"
-  desc "Spit out \"#{basename}.haml\"."
-  file "#{basename}.haml" => FileList[file, "Rakefile"] do |task|
+  CLOBBER << file.ext("haml")
+  desc "Spit out \"#{CLOBBER.last}\"."
+  file CLOBBER.last => FileList[file, "Rakefile"] do |task|
     puts "# Spitting out \"#{task.name}\"."
     content = Nokogiri::HTML.fragment(Redcarpet::Markdown.new(
         Redcarpet::Render::HTML).render(File.read(file)))
     if (!IO.popen("git log #{file}").readlines.empty?)
       last_update_html = Nokogiri::XML::Node.new("li", content)
-      last_update_html.inner_html = "<strong>Last updated</strong>: <a data-timestamp=\"" +
-          `git log -n 1 --pretty=format:%at #{file}` +
+      last_update_html.inner_html = "<strong>Last updated</strong>: " +
+          "<a data-timestamp=\"" + `git log -n 1 --pretty=format:%at #{file}` +
           "\" href=\"https://github.com/damiendart/notes/commit/" +
           `git log -n 1 --pretty=format:%H #{file}` + "\">" +
           `git log -n 1 --date=short --pretty=format:%ad #{file}` + "</a>"
       content.xpath("h1/following-sibling::ul")[0].add_child(last_update_html)
     end
+    description = content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1].gsub(/\n/," ")
     if (task.name == "index.haml")
-      description = content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1].gsub(/\n/," ")
       content.xpath("h1/following-sibling::ul")[0].remove
     else
       content.xpath("h1/following-sibling::ul")[0]["class"] = "metadata"
       content.xpath("h1/following::ul[1]/li").sort_by{ |i| i.content }.each { |node|
           node.parent = content.xpath("h1/following-sibling::ul")[0] }
-      description = content.xpath("h1/following-sibling::ul/li[contains(.,\"Description\")]")[0].remove.content[/: (.*)/m, 1].gsub(/\n/," ")
     end
     body = content.to_html.gsub(/(\n+)/){ $1 + "  " }
     title = content.xpath("h1")[0].content
