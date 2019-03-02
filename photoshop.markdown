@@ -1,3 +1,14 @@
+<!--
+  ---
+  author: Damien Dart
+  author_website: https://www.robotinaponcho.net/
+  description: View Damien Dart's Adobe Photoshop.
+  javascript_external: assets/prettydate.js
+  title: Photoshop Notes
+  ---
+-->
+
+
 Photoshop Notes
 ===============
 

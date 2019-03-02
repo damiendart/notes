@@ -1,12 +1,20 @@
+<!--
+  ---
+  author: Damien Dart
+  author_website: https://www.robotinaponcho.net/
+  description: Damien Dart's notes on Adobe Illustrator.
+  javascript_external: assets/prettydate.js
+  title: Adobe Illustrator Notes
+  ---
+-->
+
+
 Adobe Illustrator Notes
 =======================
 
-  - **Author**: [Damien Dart][1], <damiendart@pobox.com>
-  - **Description**: Damien Dart's notes on Adobe Illustrator.
   - **Last Updated**: _See accompanying `addlastupdated` script._
   - **Licence**: [Creative Commons Attribution 4.0 International License][2]
 
-[1]: <https://www.robotinaponcho.net/>
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
 

@@ -1,9 +1,16 @@
+<!--
+  ---
+  author: Damien Dart
+  author_website: https://www.robotinaponcho.net/
+  description: Damien Dart's notes on setting up, using, and troubleshooting Synology DiskStations.
+  javascript_external: assets/prettydate.js
+  title: Synology Notes
+  ---
+-->
+
 Synology Notes
 ==============
 
-  - **Author**: [Damien Dart][1], <damiendart@pobox.com>
-  - **Description**: Damien Dart's notes on setting up, using, and
-    troubleshooting Synology DiskStations.
   - **Last Updated**: _See accompanying `addlastupdated` script._
   - **Licence**: [Creative Commons Attribution 4.0 International License][2]
 
