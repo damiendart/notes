@@ -1,18 +1,15 @@
 Damien's Notes
 ==============
 
-A bunch of notes about stuff.
-
-You'll most likely want just the Markdown files; the _Rakefile_ provided
-is for my own benefit as it allows me to publish HTML versions of my
-notes on [my personal website][1].
+A bunch of notes about stuff. HTML versions of these notes are available
+on [my personal website][1].
 
 [1]: <https://www.robotinaponcho.net/notes/>
 
-The script is free and unencumbered software released into the public
-domain (see the accompanying "UNLICENCE" file for more information) and
-the notes are licensed under a [Creative Commons Attribution 4.0
-International License][2].
+The "addlastupdated" script is free and unencumbered software released
+into the public domain (see the accompanying "UNLICENCE" file for more
+information) and the Markdown documents are licensed under a [Creative
+Commons Attribution 4.0 International License][2].
 
 [2]: <http://creativecommons.org/licenses/by/4.0/>
 
