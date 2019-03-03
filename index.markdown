@@ -3,7 +3,7 @@
   author: Damien Dart
   author_website: https://www.robotinaponcho.net/
   description: View Damien Dart's notes on stuff.
-  javascript_external: assets/prettydate.js
+  javascript_external: /assets/prettydate.js
   title: Damien's Notes
   ---
 -->

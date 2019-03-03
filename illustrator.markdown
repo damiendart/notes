@@ -3,7 +3,7 @@
   author: Damien Dart
   author_website: https://www.robotinaponcho.net/
   description: Damien Dart's notes on Adobe Illustrator.
-  javascript_external: assets/prettydate.js
+  javascript_external: /assets/prettydate.js
   title: Adobe Illustrator Notes
   ---
 -->
