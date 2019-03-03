@@ -11,11 +11,12 @@
 Synology Notes
 ==============
 
-  - **Last Updated**: _See accompanying `addlastupdated` script._
-  - **Licence**: [Creative Commons Attribution 4.0 International License][2]
-
-[1]: <https://www.robotinaponcho.net/>
-[2]: <http://creativecommons.org/licenses/by/4.0/>
+<ul class="metadata-list">
+  <li class="metadata-list__item"><b>Last Updated</b>: <i>See accompanying <code>addlastupdated</code> script.</i></li>
+  <li class="metadata-list__item">
+    <b>Licence</b>: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+  </li>
+</ul>
 
 
 Setting up a Synology DiskStation

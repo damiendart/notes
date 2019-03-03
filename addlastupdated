@@ -14,7 +14,7 @@
 # more information, please refer to the accompanying "UNLICENCE" file.
 
 if ARGV.empty?
-  last_updated = '_See accompanying `addlastupdated` script._'
+  last_updated = '<i>See accompanying <code>addlastupdated</code> script.</i>'
 else
   last_updated =
     '<a data-timestamp="' + `git log -n 1 --pretty=format:%at #{ARGV[1]}` +
@@ -24,6 +24,6 @@ else
 end
 
 puts STDIN.read.gsub(
-  /\*\*Last Updated\*\*:.*$/,
-  '**Last Updated**: ' + last_updated
+  /<li class="metadata-list__item"><b>Last Updated<\/b>:.*$/,
+  "<li class=\"metadata-list__item\"><b>Last Updated</b>: #{last_updated}</li>"
 )
