@@ -12,13 +12,6 @@
 Damien's Notes
 ==============
 
-<ul class="metadata-list">
-  <li class="metadata-list__item"><b>Last Updated</b>: <i>See accompanying <code>addlastupdated</code> script.</i></li>
-  <li class="metadata-list__item">
-    <b>Licence</b>: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
-  </li>
-</ul>
-
 Notes on various things. Don't expect much.
 
   - [Adobe Illustrator Notes][3],
