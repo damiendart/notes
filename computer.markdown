@@ -12,12 +12,14 @@
 Computer Notes
 ==============
 
-<ul class="metadata-list">
-  <li class="metadata-list__item"><b>Last Updated</b>: <i>See accompanying <code>addlastupdated</code> script.</i></li>
-  <li class="metadata-list__item">
-    <b>Licence</b>: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
-  </li>
-</ul>
+<div class="admonition admonition--metadata">
+  <ul class="metadata-list">
+    <li class="metadata-list__item"><b>Last Updated</b>: <i>See accompanying <code>addlastupdated</code> script.</i></li>
+    <li class="metadata-list__item">
+      <b>Licence</b>: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+    </li>
+  </ul>
+</div>
 
 
 Setting up an Windows 10 install
